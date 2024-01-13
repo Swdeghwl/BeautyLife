@@ -1,0 +1,98 @@
+.h-size {
+    height: var(--height-size);
+}
+
+.h-row{
+    height: var(--height-size-1);
+}
+
+.brd-rs {
+    border-radius: var(--search);
+}
+
+.brd-rs-circle{
+    border-radius: var(--circle);
+}
+
+.brd-rs-crcl{
+    border-radius: 20px;
+}
+
+.brd{
+    border: var(--bs-light) 1.28px solid;
+}
+
+.brd-rs-r{
+    border-top-right-radius: var(--search);
+    border-bottom-right-radius: var(--search);
+}
+
+.brd-start {
+    border-left: var(--bs-light) 1.28px solid;
+}
+
+.fnt-14{
+    font-size: var(--fnt-14);
+}
+
+.fnt-18 {
+    font-size: var(--fnt-18);
+}
+
+.bottom {
+    bottom: 0px !important;
+}
+
+.circle {
+    height: 32px;
+    width: 32px;
+}
+
+.crcl {
+    height: 32px;
+    width: 100px;
+}
+
+input:focus{
+    outline:none;
+}
+
+input{
+    border: 0;
+}
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+    
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+    .disp-btn {
+        display: none;
+    }
+}
+
+/* for small mobile phone */
+@media screen and (max-width: 336px) {
+    .disp-btn {
+        display: block;
+    }
+
+    .disp {
+        display: none;
+    }
+}

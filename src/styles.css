@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /* colors */
+    --main-dark: #343e48;
+    --main-warning: #f5d101;
+
+    /* height size */
+    --height-size: 60px;
+    --height-size-1: 50px;
+    --height-size-2: 40px;
+
+    /* border radius */
+    --search: 50px;
+    --circle: 50%;
+    --product: 8px;
+
+    /* font size */
+    --fnt-10: 10px;
+    --fnt-11: 11px;
+    --fnt-12: 12px;
+    --fnt-14: 14px;
+    --fnt-16: 16px;
+    --fnt-18: 18px;
+
+}
+
+.main-bg-dark{
+   background-color: var(--main-dark) !important;
+}
+
+.main-text-dark{
+    color: var(--main-dark) !important;
+}
+
+.main-bg-warning{
+    background-color: var(--main-warning) !important;
+}
+
+.main-text-warning{
+    color: var(--main-warning) !important;
+}
+
+/* size */
+
+.w-15{
+    width: 15% !important;
+}
+
+.h-10{
+    height: 10% !important;
+}
+
+.top-80 {
+    top: 80% !important;
+}
+
+.top-90{
+    top: 90% !important;
+}
+
+.start-85 {
+    left: 85% !important;
+}

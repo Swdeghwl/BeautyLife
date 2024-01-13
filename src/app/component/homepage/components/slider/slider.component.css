@@ -1,0 +1,88 @@
+.h-size {
+    height: 400px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: var(--bs-light);
+    display: inline-block;
+    color: var(--bs-dark);
+}
+
+.crcl {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--main-dark) !important;
+    display: inline-block;
+}
+
+.active{
+    background-color: var(--main-warning) !important;
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.fnt-16 {
+    font-size: var(--fnt-16);
+}
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+    .h-size {
+        height: 300px;
+    }
+    
+    .circle {
+        width: 30px;
+        height: 30px;
+    }
+
+    .fnt-16 {
+        font-size: var(--fnt-14);
+    }
+    
+    .crcl {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .active{
+        background-color: var(--main-warning) !important;
+        width: 9px;
+        height: 6px;
+        border-radius: 5px;
+    }
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+    .h-size {
+        height: 300px;
+    }
+    
+    .circle {
+        width: 22px;
+        height: 22px;
+    }
+
+    .fnt-16 {
+        font-size: var(--fnt-11);
+    }
+}
