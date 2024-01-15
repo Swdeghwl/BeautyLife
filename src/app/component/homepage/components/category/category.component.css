@@ -16,7 +16,9 @@
 
 /* for laptop */
 @media screen and (max-width: 1200px) {
-
+    .h-size {
+        height: 150px;
+    }
 }
 
 /* for tablet */

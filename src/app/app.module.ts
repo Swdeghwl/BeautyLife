@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DataserviceService } from './services/data/data.service';
 import { CategoryComponent } from './component/homepage/components/category/category.component';
+import { NewproductComponent } from './component/homepage/components/newproduct/newproduct.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CategoryComponent } from './component/homepage/components/category/cate
     FirstheaderComponent,
     SecondheaderComponent,
     SliderComponent,
-    CategoryComponent
+    CategoryComponent,
+    NewproductComponent
   ],
   imports: [
     BrowserModule,
