@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { findIndex } from 'rxjs';
-import { Slider } from 'src/app/interface/interface';
+import { Img } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -16,8 +16,8 @@ export class SliderComponent {
 
   // slider part
   constructor(private dataService: DataserviceService) { }
-  data: Slider[] = this.dataService.slider
-  img: Slider = this.data[0]
+  data: Img[] = this.dataService.slider
+  img: Img = this.data[0]
 
   number: number = this.data.indexOf(this.img)
   zIndex = 'z-1'

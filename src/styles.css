@@ -17,7 +17,9 @@
     --fnt-10: 10px;
     --fnt-11: 11px;
     --fnt-12: 12px;
+    --fnt-13: 13px;
     --fnt-14: 14px;
+    --fnt-15: 15px;
     --fnt-16: 16px;
     --fnt-18: 18px;
 
@@ -45,8 +47,20 @@
     width: 15% !important;
 }
 
+.h-35{
+    height: 35% !important;
+}
+
+.h-65{
+    height: 65% !important;
+}
+
 .h-10{
     height: 10% !important;
+}
+
+.h-90{
+    height: 90% !important;
 }
 
 .top-80 {
@@ -59,4 +73,38 @@
 
 .start-85 {
     left: 85% !important;
+}
+
+/* font */
+
+.fnt-10 {
+    font-size: var(--fnt-10) !important;
+}
+
+.fnt-11 {
+    font-size: var(--fnt-11) !important;
+}
+
+.fnt-12 {
+    font-size: var(--fnt-12) !important;
+}
+
+.fnt-13 {
+    font-size: var(--fnt-13) !important;
+}
+
+.fnt-14 {
+    font-size: var(--fnt-14) !important;
+}
+
+.fnt-15 {
+    font-size: var(--fnt-15) !important;
+}
+
+.fnt-16 {
+    font-size: var(--fnt-16) !important;
+}
+
+.fnt-18 {
+    font-size: var(--fnt-18) !important;
 }

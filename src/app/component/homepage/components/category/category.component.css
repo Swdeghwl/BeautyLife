@@ -1,5 +1,5 @@
 .h-size {
-    height: 200px;
+    height: 180px !important;
 }
 
 .brd-prd{
@@ -24,18 +24,19 @@
 /* for tablet */
 @media screen and (max-width: 991.5px) {
     .h-size {
-        height: 400px;
+        height: 120px !important;
     }
 }
 
 /* for mobile phone */
 @media screen and (max-width: 767px) {
     .h-size {
-        height: 300px;
+        height: 285px !important;
     }
 }
 
-/* for small mobile phone */
+/* for small phone */
 @media screen and (max-width: 336px) {
-    
+
+
 }

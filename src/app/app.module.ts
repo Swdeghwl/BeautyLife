@@ -12,6 +12,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { DataserviceService } from './services/data/data.service';
 import { CategoryComponent } from './component/homepage/components/category/category.component';
 import { NewproductComponent } from './component/homepage/components/newproduct/newproduct.component';
+import { LimitedPipe } from './pipes/limeted/limited.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NewproductComponent } from './component/homepage/components/newproduct/
     SecondheaderComponent,
     SliderComponent,
     CategoryComponent,
-    NewproductComponent
+    NewproductComponent,
+    LimitedPipe
   ],
   imports: [
     BrowserModule,

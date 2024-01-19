@@ -2,18 +2,6 @@
     height: var(--height-size-2);
 }
 
-.fnt-12 {
-    font-size: var(--fnt-12);
-}
-
-.fnt-14{
-    font-size: var(--fnt-14);
-}
-
-.fnt-18 {
-    font-size: var(--fnt-18);
-}
-
 /* responsive */
 
 

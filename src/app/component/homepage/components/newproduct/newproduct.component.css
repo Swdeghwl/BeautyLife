@@ -2,3 +2,33 @@
     height: 300px;
 }
 
+.brd {
+    border: 1px solid var(--bs-dark);
+}
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+}
+
+/* for small phone */
+@media screen and (max-width: 336px) {
+
+
+}

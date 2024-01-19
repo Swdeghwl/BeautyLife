@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Slider } from 'src/app/interface/interface';
+import { Img } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -10,5 +10,5 @@ import { DataserviceService } from 'src/app/services/data/data.service';
 export class CategoryComponent {
   constructor(private dataService: DataserviceService){ }
 
-  data: Slider[] = this.dataService.category
+  data: Img[] = this.dataService.category
 }

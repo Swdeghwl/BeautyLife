@@ -31,14 +31,6 @@
     border-left: var(--bs-light) 1.28px solid;
 }
 
-.fnt-14{
-    font-size: var(--fnt-14);
-}
-
-.fnt-18 {
-    font-size: var(--fnt-18);
-}
-
 .bottom {
     bottom: 0px !important;
 }
