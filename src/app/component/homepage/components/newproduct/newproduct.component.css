@@ -1,5 +1,9 @@
 .h-size {
-    height: 300px;
+    height: 357px;
+}
+
+.bg-white {
+    background-color: #fff !important;
 }
 
 .brd {
@@ -16,19 +20,136 @@
 
 /* for laptop */
 @media screen and (max-width: 1200px) {
+    .h-65{
+        height: 60% !important;
+    }
 
+    .h-35{
+        height: 40% !important;
+    }
+
+    .h-size {
+        height: 340px;
+    }
+
+    .fnt-11{
+        font-size: 10px !important;
+    }
+
+    .fnt-12{
+        font-size: 10px !important;
+    }
+
+    .fnt-14{
+        font-size: 12px !important;
+    }
 }
 
 /* for tablet */
 @media screen and (max-width: 991.5px) {
+    .h-65{
+        height: 60% !important;
+    }
+
+    .h-35{
+        height: 40% !important;
+    }
+
+    .h-size {
+        height: 300px !important;
+    }
+
+    .h-size-col {
+        height: 250px !important;
+    }
+
+    .fnt-11{
+        font-size: 11px !important;
+    }
+
+    .fnt-12{
+        font-size: 12px !important;
+    }
+
+    .fnt-14{
+        font-size: 14px !important;
+    }
 }
 
 /* for mobile phone */
 @media screen and (max-width: 767px) {
+    .h-65{
+        height: 60% !important;
+    }
+
+    .h-35{
+        height: 40% !important;
+    }
+
+    .h-size {
+        height: 270px !important;
+    }
+
+    .h-size-col {
+        height: 220px !important;
+    }
+
+    .fnt-11{
+        font-size: 8px !important;
+    }
+
+    .fnt-12{
+        font-size: 8px !important;
+    }
+
+    .fnt-14{
+        font-size: 9px !important;
+    }
+
+    .w-15 {
+        width: 25% !important;
+    }
+
+    .fnt-18{
+        font-size: 14px !important;
+    }
 }
 
 /* for small phone */
 @media screen and (max-width: 336px) {
+    .h-65{
+        height: 60% !important;
+    }
 
+    .h-35{
+        height: 40% !important;
+    }
 
+    .h-size {
+        height: 300px !important;
+    }
+
+    .h-size-col {
+        height: 250px !important;
+    }
+
+    .fnt-11{
+        font-size: 11px !important;
+    }
+
+    .fnt-12{
+        font-size: 12px !important;
+    }
+
+    .fnt-14{
+        font-size: 14px !important;
+    }
+
+    .w-15 {
+        width: 25% !important;
+    }
+
+    .fnt-18{
+        font-size: 14px !important;
+    }
 }

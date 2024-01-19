@@ -1,21 +1,22 @@
-<div class="mt-md-5 mt-3 h-size">
+<div class="h-size mt-md-5 mt-3 position-relative">
     <div class="fw-bold h-10">
         <div class="w-50 h-100 d-inline-block">
             <strong class="fnt-16">New Product</strong>
         </div>
         <div class="w-50 h-100 fnt-18 d-inline-block">
             <div class="w-15 ms-auto text-end">
-                <div class="d-inline-block mx-1">
+                <div class="d-inline-block mx-1" (click)="prev()">
                     <fa-icon [icon]="left"></fa-icon>
                 </div>
-                <div class="d-inline-block mx-1">
+                <div class="d-inline-block mx-1" (click)="next()">
                     <fa-icon [icon]="right"></fa-icon>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row h-95 px-2 pt-3 px-3 h-90">
-        <div class="col-6 col-md-4 col-lg-2 brd" *ngFor="let item of data">
+    <div class="row w-100 position-absolute {{zIndex}} px-2 pt-3 px-3 h-90 bg-white"></div>
+    <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="slide != null">
+        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide">
             <div class="h-65">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
             </div>

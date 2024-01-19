@@ -79,6 +79,6 @@
     }
 
     .fnt-16 {
-        font-size: var(--fnt-11);
+        font-size: var(--fnt-11) !important;
     }
 }
