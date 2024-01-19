@@ -15,7 +15,8 @@
         </div>
     </div>
     <div class="row w-100 position-absolute {{zIndex}} px-2 pt-3 px-3 h-90 bg-white"></div>
-    <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="slide != null">
+    <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="slide != null"
+        (touchstart)="post = $event.changedTouches[0].pageX" (touchend)="moveTouch($event.changedTouches[0].pageX)">
         <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide">
             <div class="h-65">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
@@ -31,7 +32,8 @@
                 <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
                     {{item.description.caption | limited:8}}
                 </p>
-                <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0">{{item.off | currency}}</p>
+                <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0">
+                    {{item.off | currency}}</p>
                 <p class="d-inline-block w-50 fw-bold fnt-14 text-dark mt-1 mb-0">{{item.price | currency}}</p>
             </div>
         </div>

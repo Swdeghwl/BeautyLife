@@ -83,4 +83,16 @@ export class NewproductComponent {
     this.slide = this.product[this.number]
   }
 
+  // move slider with touch
+  post!: number;
+
+  moveTouch(index: number){
+    var delta = index - this.post
+
+    if(delta > 40){
+      this.next()
+    }else if(delta < -40){
+      this.prev()
+    }
+  }
 }
