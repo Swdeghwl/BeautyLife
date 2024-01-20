@@ -1,5 +1,9 @@
 .h-size {
-    height: 357px;
+    height: 307px;
+}
+
+.h-size-col {
+    height: 250px !important;
 }
 
 .bg-white {
@@ -7,7 +11,13 @@
 }
 
 .brd {
-    border: 1px solid var(--bs-dark);
+    border: 1px solid var(--bs-secondary);
+}
+
+.shape {
+    border-radius: 70% 40% 30% 25%;
+    transform: rotate(30deg);
+    top: 3% !important;
 }
 
 /* responsive */
@@ -20,11 +30,11 @@
 
 /* for laptop */
 @media screen and (max-width: 1200px) {
-    .h-65{
+    .h-60{
         height: 60% !important;
     }
 
-    .h-35{
+    .h-40{
         height: 40% !important;
     }
 
@@ -47,11 +57,11 @@
 
 /* for tablet */
 @media screen and (max-width: 991.5px) {
-    .h-65{
+    .h-60{
         height: 60% !important;
     }
 
-    .h-35{
+    .h-40{
         height: 40% !important;
     }
 
@@ -78,11 +88,11 @@
 
 /* for mobile phone */
 @media screen and (max-width: 767px) {
-    .h-65{
+    .h-60{
         height: 60% !important;
     }
 
-    .h-35{
+    .h-40{
         height: 40% !important;
     }
 
@@ -117,11 +127,11 @@
 
 /* for small phone */
 @media screen and (max-width: 336px) {
-    .h-65{
+    .h-60{
         height: 60% !important;
     }
 
-    .h-35{
+    .h-40{
         height: 40% !important;
     }
 
