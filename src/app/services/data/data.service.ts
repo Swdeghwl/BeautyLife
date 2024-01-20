@@ -16,6 +16,13 @@ export class DataserviceService {
     { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' }
   ]
 
+  newprand: Img[] = [
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+  ]
+
   product: Product[] = [
     {
       id: 'gahyu12@0px',

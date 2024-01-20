@@ -13,6 +13,7 @@ import { DataserviceService } from './services/data/data.service';
 import { CategoryComponent } from './component/homepage/components/category/category.component';
 import { NewproductComponent } from './component/homepage/components/newproduct/newproduct.component';
 import { LimitedPipe } from './pipes/limeted/limited.pipe';
+import { NewbrandComponent } from './component/homepage/components/newbrand/newbrand.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { LimitedPipe } from './pipes/limeted/limited.pipe';
     SliderComponent,
     CategoryComponent,
     NewproductComponent,
-    LimitedPipe
+    LimitedPipe,
+    NewbrandComponent
   ],
   imports: [
     BrowserModule,
