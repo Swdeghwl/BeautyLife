@@ -1,0 +1,53 @@
+.h-size {
+    height: 180px;
+}
+
+.br-img {
+    border-radius: var(--circle) !important;
+}
+
+.brd-img {
+    border: 1px solid #737373;
+}
+
+/* animation */
+
+.fnt-13:hover{
+    letter-spacing: 0.5px;
+    transition: all 1s;
+}
+
+/* responsive */
+
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+    .h-size {
+        height: 450px;
+    }
+
+    .h-col{
+        height: 53% !important;
+    }
+}
+
+/* for phone */
+@media screen and (max-width: 767px) {
+    .h-size {
+        height: 500px;
+    }
+
+    .h-col{
+        height: 50% !important;
+    }
+
+    .brs {
+        border: 0.5px solid #a4a4a4;
+        border-radius: 5px;
+    }
+}

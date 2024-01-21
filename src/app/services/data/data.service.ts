@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Img, Product } from 'src/app/interface/interface';
+import { Count, Img, Product } from 'src/app/interface/interface';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +8,15 @@ export class DataserviceService {
   slider: Img[] = [
     { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1' },
     { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+  ]
+
+  side: Count[] = [
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name' , count: 32},
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name' , count: 61},
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name' , count: 76},
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name' , count: 26},
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name' , count: 91},
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name' , count: 12},
   ]
 
   category: Img[] = [
@@ -23,6 +32,13 @@ export class DataserviceService {
     { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
   ]
 
+  newproduct: Img[] = [
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+  ]
+
   product: Product[] = [
     {
       id: 'gahyu12@0px',
@@ -31,6 +47,7 @@ export class DataserviceService {
       price: 189.2,
       whole: 189.2,
       count: 1,
+      situation: 'none',
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -51,6 +68,7 @@ export class DataserviceService {
       price: 205,
       whole: 205,
       count: 1,
+      situation: 'none',
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -71,6 +89,7 @@ export class DataserviceService {
       price: 235.4,
       whole: 235.4,
       count: 1,
+      situation: 'none',
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -90,6 +109,7 @@ export class DataserviceService {
       off: 234,
       price: 231,
       whole: 231,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -110,6 +130,7 @@ export class DataserviceService {
       off: 186,
       price: 173,
       whole: 173,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -130,6 +151,7 @@ export class DataserviceService {
       off: 132,
       price: 123,
       whole: 123,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -150,6 +172,7 @@ export class DataserviceService {
       off: 112,
       price: 108.2,
       whole: 108.2,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -170,6 +193,7 @@ export class DataserviceService {
       off: 132,
       price: 109,
       whole: 109,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -190,6 +214,7 @@ export class DataserviceService {
       off: 109,
       price: 109,
       whole: 109,
+      situation: 'none',
       count: 1,
       description: {
         name: 'sunscreen 125cd',

@@ -1,0 +1,36 @@
+.h-size { 
+    height: 140px !important;
+}
+
+.h-col { 
+    height: 120px !important;
+}
+
+.brd-rd {
+    border-radius: var(--product) !important;
+}
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+    .h-size { 
+        height: 250px !important;
+    }
+}

@@ -19,6 +19,7 @@ export interface Product {
     price: number;
     whole: number;
     count: number;
+    situation: string;
     description: Description;
 }
 
@@ -33,4 +34,12 @@ export interface New {
 export interface Img {
     src: string;
     alt: string
+}
+
+// Count
+
+export interface Count{
+    src: string;
+    name: string;
+    count: number;
 }

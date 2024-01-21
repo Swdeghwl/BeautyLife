@@ -14,6 +14,10 @@ import { CategoryComponent } from './component/homepage/components/category/cate
 import { NewproductComponent } from './component/homepage/components/newproduct/newproduct.component';
 import { LimitedPipe } from './pipes/limeted/limited.pipe';
 import { NewbrandComponent } from './component/homepage/components/newbrand/newbrand.component';
+import { PopularproductComponent } from './component/homepage/components/popularproduct/popularproduct.component';
+import { PopularbrandComponent } from './component/homepage/components/popularbrand/popularbrand.component';
+import { SideComponent } from './component/homepage/components/side/side.component';
+import { NewsComponent } from './component/homepage/components/news/news.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +29,11 @@ import { NewbrandComponent } from './component/homepage/components/newbrand/newb
     CategoryComponent,
     NewproductComponent,
     LimitedPipe,
-    NewbrandComponent
+    NewbrandComponent,
+    PopularproductComponent,
+    PopularbrandComponent,
+    SideComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
