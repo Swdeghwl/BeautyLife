@@ -18,6 +18,7 @@ import { PopularproductComponent } from './component/homepage/components/popular
 import { PopularbrandComponent } from './component/homepage/components/popularbrand/popularbrand.component';
 import { SideComponent } from './component/homepage/components/side/side.component';
 import { NewsComponent } from './component/homepage/components/news/news.component';
+import { ProductsComponent } from './component/homepage/components/products/products.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { NewsComponent } from './component/homepage/components/news/news.compone
     PopularproductComponent,
     PopularbrandComponent,
     SideComponent,
-    NewsComponent
+    NewsComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

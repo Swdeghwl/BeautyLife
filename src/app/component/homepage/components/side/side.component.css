@@ -20,6 +20,11 @@
 /* responsive */
 
 
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
 /* for laptop */
 @media screen and (max-width: 1200px) {
 
@@ -50,4 +55,9 @@
         border: 0.5px solid #a4a4a4;
         border-radius: 5px;
     }
+}
+
+/* for small phone */
+@media screen and (max-width: 336px) {
+
 }

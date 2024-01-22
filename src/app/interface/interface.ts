@@ -26,7 +26,10 @@ export interface Product {
 // New
 
 export interface New {
-    
+    src: string;
+    time: string;
+    title: string;
+    description: string;
 }
 
 // Img

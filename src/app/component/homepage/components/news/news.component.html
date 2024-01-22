@@ -1,1 +1,28 @@
-<p>news works!</p>
+<div class="mt-md-0 mt-3 position-relative">
+    <div class="fw-bold h-10">
+        <div class="w-100 h-100">
+            <strong class="fnt-16">News</strong>
+        </div>
+    </div>
+    <div class="row h-90 w-100 px-2 pt-3 px-3">
+        <div class="col-4 mt-2 h-size-col px-0 px-2" *ngFor="let item of data">
+            <div class="h-50 brd brd-bottom">
+                <img [src]="item.src" [alt]="item.title" class="w-100 h-100">
+            </div>
+            <div class="h-50 brd brd-top px-3">
+                <div class="size fnt-10 brd-rad main-bg-warning pt-1 fw-medium text-center main-text-dark">
+                    {{item.time}}
+                </div>
+                <div class="w-100 h-25 fnt-15 fw-bold text-dark mt-2">
+                    {{item.title | limited:10}}
+                </div>
+                <div class="w-100 h-30 fnt-11 text-secondary mt-2">
+                    {{item.description | limited:18}}
+                </div>
+                <button class="btn main-bg-warning main-text-dark brd-btn fnt-12 fw-medium mt-1">
+                    READ MORE
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@
     /* border radius */
     --search: 50px;
     --circle: 50%;
+    --btn: 15px;
+    --time: 4px;
     --product: 8px;
 
     /* font size */
@@ -61,6 +63,10 @@
 
 .h-90{
     height: 90% !important;
+}
+
+.h-30{
+    height: 30% !important;
 }
 
 .top-80 {
