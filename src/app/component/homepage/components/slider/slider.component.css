@@ -26,6 +26,10 @@
     border-radius: 5px;
 }
 
+.mt-h {
+    margin-top: var(--height-size-3) !important;
+}
+
 /* responsive */
 
 
@@ -64,6 +68,10 @@
         width: 9px;
         height: 6px;
         border-radius: 5px;
+    }
+
+    .mt-h {
+        margin-top: var(--height-size) !important;
     }
 }
 

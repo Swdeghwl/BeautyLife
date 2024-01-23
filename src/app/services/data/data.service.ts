@@ -19,36 +19,42 @@ export class DataserviceService {
     { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 12 },
   ]
 
+  products: Count[]= [
+      { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 32 },
+      { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 61 },
+      { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 76 },
+    ]
+
   news: New[] = [
     {
       src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrQ8HdKx5aoQE2o9-sigwlAD_dqV2wqKlVA&usqp=CAU',
       time: '25 january, 2024',
-      title: 'this is our today news and we ar going to say something',
-      description: 'this is our today news and we ar going to say something this is our today news and we ar going to say something this is our today news and we ar going to say something'
+      title: 'this is our today news and we are going to say something',
+      description: 'this is our today news and we are going to say something this is our today news and we are going to say something this is our today news and we are going to say something'
     },
     {
       src: 'https://img.freepik.com/premium-photo/laptop-table-dark-room-3d-rendering-ai-generated_877188-667.jpg',
       time: '25 january, 2024',
-      title: 'this is our today news and we ar going to say something',
-      description: 'this is our today news and we ar going to say something this is our today news and we ar going to say something this is our today news and we ar going to say something'
+      title: 'this is our today news and we are going to say something',
+      description: 'this is our today news and we are going to say something this is our today news and we are going to say something this is our today news and we are going to say something'
     },
     {
       src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIUfSDmm3zSoVns7QLM2WFVpmG22Fn1bD8fA&usqp=CAU',
       time: '25 january, 2024',
-      title: 'this is our today news and we ar going to say something',
-      description: 'this is our today news and we ar going to say something this is our today news and we ar going to say something this is our today news and we ar going to say something'
+      title: 'this is our today news and we are going to say something',
+      description: 'this is our today news and we are going to say something this is our today news and we are going to say something this is our today news and we are going to say something'
     },
     {
       src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrQ8HdKx5aoQE2o9-sigwlAD_dqV2wqKlVA&usqp=CAU',
       time: '25 january, 2024',
-      title: 'this is our today news and we ar going to say something',
-      description: 'this is our today news and we ar going to say something this is our today news and we ar going to say something this is our today news and we ar going to say something'
+      title: 'this is our today news and we are going to say something',
+      description: 'this is our today news and we are going to say something this is our today news and we are going to say something this is our today news and we are going to say something'
     },
     {
       src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMrQ8HdKx5aoQE2o9-sigwlAD_dqV2wqKlVA&usqp=CAU',
       time: '25 january, 2024',
-      title: 'this is our today news and we ar going to say something',
-      description: 'this is our today news and we ar going to say something this is our today news and we ar going to say something this is our today news and we ar going to say something'
+      title: 'this is our today news and we are going to say something',
+      description: 'this is our today news and we are going to say something this is our today news and we are going to say something this is our today news and we are going to say something'
     },
   ]
 

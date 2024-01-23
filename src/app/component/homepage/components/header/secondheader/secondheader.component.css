@@ -2,35 +2,38 @@
     height: var(--height-size-2);
 }
 
+.top-uni {
+    transition: top 300ms ease-out;
+    top: var(--height-size) !important;
+}
+
+.animation {
+    transition: top 300ms ease;
+    top: 0 !important;
+}
+
 /* responsive */
 
 
 /* for bigger than laptop */
-@media screen and (min-width: 1200px) {
-
-}
+@media screen and (min-width: 1200px) {}
 
 /* for laptop */
 @media screen and (max-width: 1200px) {
-    .fnt-14{
-        font-size: var(--fnt-11);
+    .fnt-14 {
+        font-size: var(--fnt-11) !important;
     }
+
     .fnt-12 {
-        font-size: var(--fnt-10);
+        font-size: var(--fnt-10) !important;
     }
 }
 
 /* for tablet */
-@media screen and (max-width: 991.5px) {
-    
-}
+@media screen and (max-width: 991.5px) {}
 
 /* for mobile phone */
-@media screen and (max-width: 767px) {
-
-}
+@media screen and (max-width: 767px) {}
 
 /* for small mobile phone */
-@media screen and (max-width: 336px) {
-
-}
+@media screen and (max-width: 336px) {}

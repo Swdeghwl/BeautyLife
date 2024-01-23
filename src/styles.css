@@ -7,6 +7,7 @@
     --height-size: 60px;
     --height-size-1: 50px;
     --height-size-2: 40px;
+    --height-size-3: 100px;
 
     /* border radius */
     --search: 50px;
@@ -16,6 +17,8 @@
     --product: 8px;
 
     /* font size */
+    --fnt-8: 8px;
+    --fnt-9: 9px;
     --fnt-10: 10px;
     --fnt-11: 11px;
     --fnt-12: 12px;
@@ -69,6 +72,10 @@
     height: 30% !important;
 }
 
+.w-80 {
+    width: 80% !important;
+}
+
 .top-80 {
     top: 80% !important;
 }
@@ -113,4 +120,14 @@
 
 .fnt-18 {
     font-size: var(--fnt-18) !important;
+}
+
+/* z-index */
+
+.z-index {
+    z-index: 5 !important;
+}
+
+.z-index-low {
+    z-index: 4 !important;
 }

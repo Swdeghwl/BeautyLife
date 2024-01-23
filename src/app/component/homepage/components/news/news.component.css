@@ -32,17 +32,22 @@
 
 /* for bigger than laptop */
 @media screen and (min-width: 1200px) {
-
 }
 
 /* for laptop */
 @media screen and (max-width: 1200px) {
-
+    .size {
+        width: 50%;
+        height: 12%;
+    }
 }
 
 /* for tablet */
 @media screen and (max-width: 991.5px) {
-
+    .size {
+        width: 55%;
+        height: 12%;
+    }
 }
 
 /* for mobile phone */
