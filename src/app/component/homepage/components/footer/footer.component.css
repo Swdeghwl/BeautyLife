@@ -1,3 +1,66 @@
 .h-size {
-    height: 500px;
+    height: 350px;
+}
+
+.brd-btm {
+    border-bottom: 2px solid var(--main-warning);
+    transition: all 700ms ease-in;
+}
+
+.brd-btm:hover {
+    width: 60% !important;
+    transition: all 700ms ease-out;
+}
+
+.brd-btm-s{
+    border-bottom: 2px solid var(--main-warning);
+    transition: all 700ms ease-in;
+}
+
+.brd-btm-s:hover{
+    width: 35% !important;
+    transition: all 700ms ease-out;
+}
+
+.brd-crcl {
+    width: 25px !important;
+    height: 25px !important;
+    border-radius: 50% !important;
+}
+
+.mt {
+    margin-top: 230px !important;
+}
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+    .h-size {
+        height: 700px !important;
+    }
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+    .h-size {
+        height: 1130px !important;
+    }
+}
+
+/* for small phone */
+@media screen and (max-width: 336px) {
+
+
 }

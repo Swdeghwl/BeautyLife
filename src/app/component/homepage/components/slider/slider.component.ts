@@ -69,10 +69,10 @@ export class SliderComponent {
   moveTouch(index: number) {
     var delta = index - this.post
 
-    if (delta > 40) {
-      this.next()
-    } else if (delta < -40) {
+    if (delta > 70) {
       this.prev()
+    } else if (delta < -70) {
+      this.next()
     }
   }
 }
