@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Data } from '@angular/router';
 import { New } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
@@ -9,7 +9,7 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent {
-  constructor(private dataServie: DataserviceService){ }
-  data: New[] = this.dataServie.news
+  // develope data
+  @Input('mainData') public data!: New[];
   
 }

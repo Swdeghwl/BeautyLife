@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { Img } from 'src/app/interface/interface';
-import { DataserviceService } from 'src/app/services/data/data.service';
+import { Component, Input } from '@angular/core';
+import { HomePage, Img } from 'src/app/interface/interface';
 
 @Component({
   selector: 'app-category',
@@ -8,7 +7,7 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./category.component.css']
 })
 export class CategoryComponent {
-  constructor(private dataService: DataserviceService){ }
-
-  data: Img[] = this.dataService.category
+  // develope data
+  
+  @Input('mainData') public data!: Img[];
 }

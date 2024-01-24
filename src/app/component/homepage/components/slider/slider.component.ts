@@ -1,8 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import { findIndex } from 'rxjs';
 import { Img } from 'src/app/interface/interface';
-import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
   selector: 'app-slider',
@@ -10,18 +8,16 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
+  // develope data
+  @Input('mainData') public data!: Img[];
+
   // icons
   right = faAngleRight
   left = faAngleLeft
 
   // slider part
-  constructor(private dataService: DataserviceService) { }
-  data: Img[] = this.dataService.slider
-  img: Img = this.data[0]
-
-  number: number = this.data.indexOf(this.img)
   zIndex = 'z-1'
-  index = 0
+  index: number = 0
 
 
   ngOnInit() {
@@ -41,9 +37,6 @@ export class SliderComponent {
     setTimeout(() => {
       this.zIndex = 'z-1'
     }, 150)
-
-    this.img = this.data[this.index]
-    this.number = this.data.indexOf(this.img)
   }
 
   prev() {
@@ -57,15 +50,10 @@ export class SliderComponent {
     setTimeout(() => {
       this.zIndex = 'z-1'
     }, 150)
-
-    this.img = this.data[this.index]
-    this.number = this.data.indexOf(this.img)
   }
 
   move(index: number) {
-    this.number = index
     this.index = index
-    this.img = this.data[this.index]
 
     // animation
     this.zIndex = 'z-3'
@@ -78,12 +66,12 @@ export class SliderComponent {
   // move slider with touch
   post!: number;
 
-  moveTouch(index: number){
+  moveTouch(index: number) {
     var delta = index - this.post
 
-    if(delta > 40){
+    if (delta > 40) {
       this.next()
-    }else if(delta < -40){
+    } else if (delta < -40) {
       this.prev()
     }
   }

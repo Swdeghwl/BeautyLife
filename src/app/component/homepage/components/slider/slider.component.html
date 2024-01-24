@@ -2,10 +2,10 @@
     <div class="w-100 h-100 bg-dark position-relative">
         <div class="w-100 h-100 position-absolute bg-light {{zIndex}}"></div>
         <div class="w-100 h-100 position-absolute z-2 position-relative">
-            <img [src]="img.src" [alt]="img.alt" class="h-100 w-100 position-absolute">
+            <img [src]="data[index].src" [alt]="data[index].alt" class="h-100 w-100 position-absolute">
             <div class="top-80 position-absolute start-85">
-                <div class="circle text-center">
-                    <div class="h-50 mt-1 fnt-16" (click)="prev()">
+                <div class="circle text-center" (click)="prev()">
+                    <div class="h-50 mt-1 fnt-16">
                         <fa-icon [icon]="left"></fa-icon>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
             <div class="position-absolute text-center w-100 top-90">
                 <div class="w-100 h-100">
                     <div *ngFor="let item of data; let in = index" (click)="move(in)"
-                        [ngClass]="in == number ? 'crcl mx-1 d-inline-block active' : 'crcl mx-1 d-inline-block'">
+                        [ngClass]="in == index ? 'crcl mx-1 d-inline-block active' : 'crcl mx-1 d-inline-block'">
                     </div>
                 </div>
             </div>

@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
-import { Count, Img, New, Product } from 'src/app/interface/interface';
+import { Count, HomePage, Img, New, Product, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
 
 @Injectable({
   providedIn: 'root'
 })
 export class DataserviceService {
   slider: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
   ]
 
   side: Count[] = [
@@ -59,23 +60,23 @@ export class DataserviceService {
   ]
 
   category: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' }
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  }
   ]
 
   newprand: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
   ]
 
   newproduct: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2' },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
   ]
 
   product: Product[] = [
@@ -86,7 +87,8 @@ export class DataserviceService {
       price: 189.2,
       whole: 189.2,
       count: 1,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -107,7 +109,8 @@ export class DataserviceService {
       price: 205,
       whole: 205,
       count: 1,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -128,7 +131,8 @@ export class DataserviceService {
       price: 235.4,
       whole: 235.4,
       count: 1,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
         caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
@@ -148,7 +152,8 @@ export class DataserviceService {
       off: 234,
       price: 231,
       whole: 231,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -169,7 +174,8 @@ export class DataserviceService {
       off: 186,
       price: 173,
       whole: 173,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -190,7 +196,8 @@ export class DataserviceService {
       off: 132,
       price: 123,
       whole: 123,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -211,7 +218,8 @@ export class DataserviceService {
       off: 112,
       price: 108.2,
       whole: 108.2,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -232,7 +240,8 @@ export class DataserviceService {
       off: 132,
       price: 109,
       whole: 109,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -253,7 +262,8 @@ export class DataserviceService {
       off: 109,
       price: 109,
       whole: 109,
-      situation: 'none',
+      situation: productSituation.new,
+      type: typeProduct.firstProduct,
       count: 1,
       description: {
         name: 'sunscreen 125cd',
@@ -267,9 +277,20 @@ export class DataserviceService {
           colors: 'yellow white orange',
         }
       }
-    }
-
+    },
   ]
+
+    homePage : HomePage = {
+      slider: this.slider,
+      category: this.category,
+      products: this.products,
+      newProduct: this.product,
+      newImg: this.newproduct,
+      popularProduct: this.product,
+      popularImg: this.newproduct,
+      brands: this.side,
+      news: this.news,
+    }
 
   constructor() { }
 }

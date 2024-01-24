@@ -1,18 +1,18 @@
 <app-firstheader></app-firstheader>
 <app-secondheader></app-secondheader>
-<app-slider></app-slider>
+<app-slider [mainData]="data.slider"></app-slider>
 <div class="container-fluid mx-auto">
     <div class="row container mx-auto">
         <div class="col-lg-1 col-0"></div>
         <div class="col-12 col-lg-10">
-            <app-category></app-category>
-            <app-products></app-products>
-            <app-newproduct></app-newproduct>
-            <app-newbrand></app-newbrand>
-            <app-popularproduct></app-popularproduct>
-            <app-popularbrand></app-popularbrand>
-            <app-side></app-side>
-            <app-news></app-news>
+            <app-category [mainData]="data.category"></app-category>
+            <app-products [mainData]="data.products"></app-products>
+            <app-newproduct [mainData]="data.newProduct"></app-newproduct>
+            <app-newbrand [mainData]="data.newImg"></app-newbrand>
+            <app-popularproduct [mainData]="data.popularProduct"></app-popularproduct>
+            <app-popularbrand [mainData]="data.popularImg"></app-popularbrand>
+            <app-side [mainData]="data.brands"></app-side>
+            <app-news [mainData]="data.news"></app-news>
         </div>
         <div class="col-lg-1 col-0"></div>
     </div>

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Count } from 'src/app/interface/interface';
+import { Component, Input } from '@angular/core';
+import { Count, HomePage } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -8,6 +8,6 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
-  constructor(private dataService: DataserviceService){ }
-  data: Count[] = this.dataService.products
+  // develope data
+  @Input('mainData') public data!: Count[] ;
 }

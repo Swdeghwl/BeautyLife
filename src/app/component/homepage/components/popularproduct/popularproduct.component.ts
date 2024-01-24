@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Product } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
@@ -9,7 +9,9 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./popularproduct.component.css']
 })
 export class PopularproductComponent {
-  constructor(private dataService: DataserviceService) { }
+  // develope data
+
+  @Input('mainData') public data!: Product[];
 
   // icons
   right = faAngleRight
@@ -17,7 +19,6 @@ export class PopularproductComponent {
   star = faStar
 
   // carousel
-  data: Product[] = this.dataService.product
   product: any = []
   number: number = 0
   slide!: Product[]

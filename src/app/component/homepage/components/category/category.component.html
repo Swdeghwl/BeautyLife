@@ -1,5 +1,5 @@
 <div class="h-size mt-3 mt-lg-4">
-    <div class="row h-size">
+    <div class="row h-size" *ngIf="data!= null">
         <div class="col-md-4 col-6 px-2 mt-1 mt-md-0 mx-auto" *ngFor="let item of data">
             <img [src]="item.src" [alt]="item.alt" class="h-100 w-100 brd-prd">
         </div>

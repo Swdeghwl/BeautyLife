@@ -1,5 +1,16 @@
 // Product
 
+export enum productSituation {
+    popular,
+    new,
+}
+
+export enum typeProduct{
+    firstProduct,
+    secondProduct,
+    thirdProduct
+}
+
 export interface Situation {
     productNumber: number;
     property: Object;
@@ -19,7 +30,8 @@ export interface Product {
     price: number;
     whole: number;
     count: number;
-    situation: string;
+    situation: productSituation;
+    type: typeProduct;
     description: Description;
 }
 
@@ -34,9 +46,20 @@ export interface New {
 
 // Img
 
+export enum sliderSituation{
+    homepageSlider,
+    firstSlider,
+    secondSlider,
+    thirdeSlider,
+    categoryImg,
+    popularImg,
+    newImg
+}
+
 export interface Img {
     src: string;
     alt: string
+    situation: sliderSituation;
 }
 
 // Count
@@ -45,4 +68,20 @@ export interface Count{
     src: string;
     name: string;
     count: number;
+}
+
+// main
+
+// Homepage
+
+export interface HomePage{
+    slider: Img[],
+    category: Img[],
+    products: Count[],
+    newProduct: Product[],
+    newImg: Img[],
+    popularProduct: Product[],
+    popularImg: Img[],
+    brands: Count[],
+    news: New[],
 }

@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Img } from 'src/app/interface/interface';
-import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
   selector: 'app-popularbrand',
@@ -8,6 +7,6 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./popularbrand.component.css']
 })
 export class PopularbrandComponent {
-  constructor(private dataService: DataserviceService){ }
-  data:Img[] = this.dataService.newprand
+  // develope data
+  @Input('mainData') public data!: Img[];
 }

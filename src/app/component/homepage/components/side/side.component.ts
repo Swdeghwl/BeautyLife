@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Count, Img } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 
@@ -8,6 +8,6 @@ import { DataserviceService } from 'src/app/services/data/data.service';
   styleUrls: ['./side.component.css']
 })
 export class SideComponent {
-  constructor(private dataServices: DataserviceService){ }
-  data: Count[] = this.dataServices.side
+  // develope data
+  @Input('mainData') public data!: Count[];
 }
