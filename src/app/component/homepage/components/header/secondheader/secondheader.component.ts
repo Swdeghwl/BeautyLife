@@ -16,7 +16,7 @@ export class SecondheaderComponent {
   animation: boolean = false
 
   @HostListener('window:scroll',['$event']) onScrollEvent(){
-    if(window.scrollY > 1200){
+    if(window.scrollY > 700){
       this.animation = true
     }else {
       this.animation = false

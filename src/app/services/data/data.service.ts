@@ -6,9 +6,9 @@ import { Count, HomePage, Img, New, Product, productSituation, sliderSituation, 
 })
 export class DataserviceService {
   slider: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider },
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
   ]
 
   side: Count[] = [
@@ -20,11 +20,18 @@ export class DataserviceService {
     { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 12 },
   ]
 
-  products: Count[]= [
-      { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 32 },
-      { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 61 },
-      { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 76 },
-    ]
+  products: Count[] = [
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 32, routerAddress: 'product', routerId: 'gp092k' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 61, routerAddress: 'product', routerId: 'ghrw34' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 76, routerAddress: 'product', routerId: 'klq23p' },
+  ]
+
+
+  firstProducts: Count[] = [
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 11, routerAddress: 'product', routerId: 'uifg9uvu' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', name: 'name', count: 12, routerAddress: 'product', routerId: '0985uiy98' },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', name: 'name', count: 13, routerAddress: 'product', routerId: 'ospeifje87' },
+  ]
 
   news: New[] = [
     {
@@ -60,23 +67,23 @@ export class DataserviceService {
   ]
 
   category: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  }
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '1', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider }
   ]
 
   newprand: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
   ]
 
   newproduct: Img[] = [
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation:sliderSituation.homepageSlider  },
-    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation:sliderSituation.homepageSlider  },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/51699d91-5240-4f58-bcbc-bf2b50d220e6.jpeg?key=promo-image', alt: '2', situation: sliderSituation.homepageSlider },
+    { src: 'https://cdn-img1.imgworlds.com/assets/929c2a00-a8dc-4924-849e-4ef085cc8011.jpg?key=promo-image', alt: '3', situation: sliderSituation.homepageSlider },
   ]
 
   product: Product[] = [
@@ -91,7 +98,7 @@ export class DataserviceService {
       type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 24,
           property: {
@@ -113,7 +120,7 @@ export class DataserviceService {
       type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 54,
           property: {
@@ -135,7 +142,7 @@ export class DataserviceService {
       type: typeProduct.firstProduct,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 76,
           property: {
@@ -157,7 +164,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 23,
           property: {
@@ -179,7 +186,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 32,
           property: {
@@ -201,7 +208,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 141,
           property: {
@@ -223,7 +230,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 21,
           property: {
@@ -245,7 +252,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 11,
           property: {
@@ -267,7 +274,7 @@ export class DataserviceService {
       count: 1,
       description: {
         name: 'sunscreen 125cd',
-        caption: 'this is the best product in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
+        caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 62,
           property: {
@@ -280,7 +287,10 @@ export class DataserviceService {
     },
   ]
 
-    homePage : HomePage = {
+  constructor() { }
+
+  homepage() {
+    return {
       slider: this.slider,
       category: this.category,
       products: this.products,
@@ -291,6 +301,32 @@ export class DataserviceService {
       brands: this.side,
       news: this.news,
     }
+  }
 
-  constructor() { }
+  firstproduct(){
+    return {
+    slider: this.slider,
+    category: this.category,
+    newProduct: this.product,
+    popularProduct: this.product,
+    }
+  }
+
+  secondproduct(){
+    return {
+    slider: this.slider,
+    category: this.category,
+    newProduct: this.product,
+    popularProduct: this.product,
+    }
+  }
+
+  thirdproduct(){
+    return {
+    slider: this.slider,
+    category: this.category,
+    newProduct: this.product,
+    popularProduct: this.product,
+    }
+  }
 }

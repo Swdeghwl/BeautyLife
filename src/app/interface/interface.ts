@@ -68,6 +68,8 @@ export interface Count{
     src: string;
     name: string;
     count: number;
+    routerAddress?: string;
+    routerId?: string;
 }
 
 // main
@@ -84,4 +86,13 @@ export interface HomePage{
     popularImg: Img[],
     brands: Count[],
     news: New[],
+}
+
+// ProductCast
+
+export interface ProductCast {
+    slider: Img[],
+    category: Img[],
+    newProduct: Product[],
+    popularProduct: Product[],
 }

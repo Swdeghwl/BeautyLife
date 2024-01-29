@@ -12,7 +12,7 @@ export class NewproductComponent {
   // develope data
   @Input('mainData') public data!: Product[];
 
-  
+
   // icons
   right = faAngleRight
   left = faAngleLeft
@@ -46,6 +46,10 @@ export class NewproductComponent {
     this.slide = array1[this.number]
   }
 
+  // all products
+  boolean: boolean = false
+
+
   ngOnInit() {
     if (window.innerWidth > 991.5) {
       this.category(this.product, this.data, 6)
@@ -68,6 +72,12 @@ export class NewproductComponent {
       this.zIndex = 'z-1'
     }, 150)
     this.slide = this.product[this.number]
+
+    if(this.product[this.product.length - 1] == this.slide) {
+      this.boolean = true
+    } else {
+      this.boolean = false
+    }
   }
 
   prev() {
@@ -82,17 +92,23 @@ export class NewproductComponent {
       this.zIndex = 'z-1'
     }, 150)
     this.slide = this.product[this.number]
+    
+    if(this.product[this.product.length - 1] == this.slide) {
+      this.boolean = true
+    } else {
+      this.boolean = false
+    }
   }
 
   // move slider with touch
   post!: number;
 
-  moveTouch(index: number){
+  moveTouch(index: number) {
     var delta = index - this.post
 
-    if(delta > 40){
+    if (delta > 40) {
       this.next()
-    }else if(delta < -40){
+    } else if (delta < -40) {
       this.prev()
     }
   }

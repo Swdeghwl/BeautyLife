@@ -20,7 +20,8 @@
         <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide; let index = index">
             <div class="h-60 position-relative">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
-                <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning" *ngIf="item.off != item.price">
+                <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"
+                    *ngIf="item.off != item.price">
                     {{-(item.off - item.price)/item.off | percent}}
                 </div>
             </div>
@@ -36,9 +37,18 @@
                 <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
                     {{item.description.caption | limited:8}}
                 </p>
-                <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0" *ngIf="item.off != item.price">
+                <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0"
+                    *ngIf="item.off != item.price">
                     {{item.off | currency}}</p>
                 <p class="d-inline-block w-50 fw-bold fnt-14 text-dark mt-1 mb-0">{{item.price | currency}}</p>
+            </div>
+        </div>
+        <div class="h-size-col  col-4 col-md-3 col-lg-2 brd" *ngIf="boolean">
+            <div class="crcl brd bg-light mx-auto text-center">
+                <fa-icon [icon]="right" class="fnt-18"></fa-icon>
+                <p class="fnt-14">
+                    Show All
+                </p>
             </div>
         </div>
     </div>

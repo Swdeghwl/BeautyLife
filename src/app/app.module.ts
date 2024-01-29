@@ -20,6 +20,7 @@ import { SideComponent } from './component/homepage/components/side/side.compone
 import { NewsComponent } from './component/homepage/components/news/news.component';
 import { ProductsComponent } from './component/homepage/components/products/products.component';
 import { FooterComponent } from './component/homepage/components/footer/footer.component';
+import { ProductcastComponent } from './component/homepage/cast/productcast/productcast.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FooterComponent } from './component/homepage/components/footer/footer.c
     SideComponent,
     NewsComponent,
     ProductsComponent,
-    FooterComponent
+    FooterComponent,
+    ProductcastComponent
   ],
   imports: [
     BrowserModule,

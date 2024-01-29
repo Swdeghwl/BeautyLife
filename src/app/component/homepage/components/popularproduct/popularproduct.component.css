@@ -20,6 +20,13 @@
     top: 3% !important;
 }
 
+.crcl { 
+    width: 50%;
+    height: 25%;
+    border-radius: 50%;
+    margin-top: 80%;
+}
+
 /* responsive */
 
 

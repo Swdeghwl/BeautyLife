@@ -10,5 +10,5 @@ import { DataserviceService } from 'src/app/services/data/data.service';
 export class HomepageComponent {
   constructor(private dataService: DataserviceService){ }
   
-  data: HomePage = this.dataService.homePage
+  data: HomePage = this.dataService.homepage()
 }
