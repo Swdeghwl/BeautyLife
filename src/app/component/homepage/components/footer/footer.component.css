@@ -57,6 +57,11 @@
     .h-size {
         height: 1130px !important;
     }
+
+    .brd-btm-s{
+        border-bottom: 0px;
+        transition: all 700ms ease-in;
+    }
 }
 
 /* for small phone */

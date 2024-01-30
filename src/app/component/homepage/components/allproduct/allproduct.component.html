@@ -1,23 +1,11 @@
 <div class="h-size mt-md-4 mt-3 position-relative" *ngIf="data != null">
     <div class="fw-bold h-10">
-        <div class="w-50 h-100 d-inline-block">
-            <strong class="fnt-16">Popular Product</strong>
-        </div>
-        <div class="w-50 h-100 fnt-18 d-inline-block">
-            <div class="w-15 ms-auto text-end">
-                <div class="d-inline-block mx-1" (click)="prev()">
-                    <fa-icon [icon]="left"></fa-icon>
-                </div>
-                <div class="d-inline-block mx-1" (click)="next()">
-                    <fa-icon [icon]="right"></fa-icon>
-                </div>
-            </div>
+        <div class="w-100 h-100 d-inline-block text-center">
+            <strong class="fnt-18">(Products)</strong>
         </div>
     </div>
-    <div class="row w-100 position-absolute {{zIndex}} px-2 pt-3 px-3 h-90 bg-white"></div>
-    <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="slide != null"
-        (touchstart)="post = $event.changedTouches[0].pageX" (touchend)="moveTouch($event.changedTouches[0].pageX)">
-        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide; let index = index">
+    <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="data != null">
+        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of data; let index = index">
             <div class="h-60 position-relative">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
                 <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"
@@ -33,7 +21,6 @@
                     <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
                     <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
                 </div>
-
                 <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
                     {{item.description.caption | limited:8}}
                 </p>
@@ -43,7 +30,7 @@
                 <p class="d-inline-block w-50 fw-bold fnt-14 text-dark mt-1 mb-0">{{item.price | currency}}</p>
             </div>
         </div>
-        <div class="h-size-col  col-4 col-md-3 col-lg-2 brd" *ngIf="boolean">
+        <div class="h-size-col  col-4 col-md-3 col-lg-2 brd">
             <div class="crcl brd bg-light mx-auto text-center">
                 <fa-icon [icon]="right" class="fnt-18 text-primary"></fa-icon>
                 <p class="fnt-14 text-primary">

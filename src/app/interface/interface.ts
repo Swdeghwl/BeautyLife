@@ -95,4 +95,5 @@ export interface ProductCast {
     category: Img[],
     newProduct: Product[],
     popularProduct: Product[],
+    allProduct: Product[]
 }

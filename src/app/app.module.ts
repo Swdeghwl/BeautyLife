@@ -21,6 +21,8 @@ import { NewsComponent } from './component/homepage/components/news/news.compone
 import { ProductsComponent } from './component/homepage/components/products/products.component';
 import { FooterComponent } from './component/homepage/components/footer/footer.component';
 import { ProductcastComponent } from './component/homepage/cast/productcast/productcast.component';
+import { AllproductComponent } from './component/homepage/components/allproduct/allproduct.component';
+import { FilterComponent } from './component/homepage/components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ProductcastComponent } from './component/homepage/cast/productcast/prod
     NewsComponent,
     ProductsComponent,
     FooterComponent,
-    ProductcastComponent
+    ProductcastComponent,
+    AllproductComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
