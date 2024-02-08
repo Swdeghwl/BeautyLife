@@ -1,0 +1,126 @@
+.brd {
+    border: 1px solid var(--main-dark) !important;
+}
+
+.h-position {
+    height: 350px;
+}
+
+.h-rows {
+    height: 1000px;
+}
+
+.shape {
+    height: 29px;
+    border-radius: 70% 40% 30% 25%;
+    transform: rotate(30deg);
+}
+
+.text-shape {
+    display: block;
+    transform: rotate(-30deg);
+}
+
+.over {
+    overflow-y: scroll;
+    overflow-block: initial;
+}
+
+.squer {
+    width: 10px !important;
+    height: 10px !important;
+}
+
+.active {
+    background-color: var(--bs-primary);
+}
+
+.h-size {
+    height: 80px;
+}
+
+.bg-main-dark-a {
+    background-color: var(--main-dark-a);
+}
+
+/* scroll design */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* animation */
+
+.bottom-uni {
+    transition: top 700ms ease;
+    bottom: 30px !important;
+}
+
+.animation {
+    transition: bottom 700ms ease-in;
+    bottom: 350px;
+}
+
+.active {
+    transition: top 7000ms ease;
+    display: block !important;
+}
+
+.unactive {
+    transition: bottom 7000ms ease-out;
+    display: none !important;
+}
+
+.h-filter {
+    height: 50px !important;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 20% !important;
+}
+
+
+/* responsive */
+
+
+/* for bigger than laptop */
+@media screen and (min-width: 1200px) {
+
+}
+
+/* for laptop */
+@media screen and (max-width: 1200px) {
+
+}
+
+/* for tablet */
+@media screen and (max-width: 991.5px) {
+    .situation {
+        background-color: var(--bs-light);
+        z-index: 12 !important;
+        top: 20% !important;
+        bottom: 42% !important;
+    }
+    
+    .fnt-12 {
+        font-size: 10px !important;
+    }
+}
+
+/* for mobile phone */
+@media screen and (max-width: 767px) {
+    .situation {
+        background-color: var(--bs-light);
+        z-index: 12 !important;
+    }
+
+    .fnt-12 {
+        font-size: 10px !important;
+    }
+}
+
+/* for small phone */
+@media screen and (max-width: 336px) {
+
+}

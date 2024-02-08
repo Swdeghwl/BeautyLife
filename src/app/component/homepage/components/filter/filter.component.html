@@ -1,0 +1,127 @@
+<app-firstheader></app-firstheader>
+<app-secondheader></app-secondheader>
+
+<div class="h-size bg-main-dark-a mt-header">
+    <div class="container-fluid">
+        <div class="container">
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="container">
+        <div class="row d-block d-lg-none mt-1">
+            <div class="col-md-1 col-2">
+                <div class="shape fnt-10 text-light main-bg-warning text-center" (click)="designChanger()">
+                    <fa-icon [icon]="filterico" class="text-shape pt-2"></fa-icon>
+                </div>
+            </div>
+            <div class="col-5">
+                <p class="fnt-12 fw-medium main-text-warning mt-2">filter / price / product</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-2 col-lg-3 d-none d-lg-block">
+                <div class="container-fluid w-100 d-block sticky brd mt-2 mt-lg-3 over h-filte"
+                    *ngIf="alldata.filter != null">
+                    <div class="fnt-16 fw-bold text-center">
+                        filter by
+                    </div>
+                    <div class="container mt-3" *ngFor="let item of alldata.filter">
+                        <div class="fnt-14 fw-medium">
+                            {{item.filterType}}
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 row" *ngFor="let name of item.filterName; let index = index">
+                                <div class="col-3">
+                                    <input type="checkbox" (click)="arFilter(item.filterType, name)">
+                                </div>
+                                <div class="col-9 fnt-12 pt-1">
+                                    {{name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mb-4">
+                        <div class="row">
+                            <div class="fnt-14 fw-medium">
+                                price
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="fnt-12 my-0">$ from</p>
+                                <input type="number" placeholder="$ from" class="w-90 fnt-12" [(ngModel)]="firstPrice">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="fnt-12 my-0">$ to</p>
+                                <input type="number" placeholder="$ to" class="w-90 fnt-12" [(ngModel)]="secondPrice">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn main-bg-warning w-90 mt-2 fnt-12 text-center mx-auto"
+                                    (click)="priceRange()">calculate</button>
+                            </div>
+                            <div class="col-12 row">
+                                <div class="fnt-12 col-9 pt-2 text-secondary mb-0 d-inline-block" (click)="default()">
+                                    default</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-10 start-0 top-10 z-3 bg-light bottom-0 end-0 position-fixed d-lg-none"
+                [ngClass]="{'d-block active' : design == true , 'd-none unactive' : design == false}">
+                <div class="mt-5" (click)="designChanger()">
+                    <fa-icon [icon]="close" class="pt-3 fnt-16" ></fa-icon>
+                </div>
+                <div class="container-fluid col-md-4 col-7 over" *ngIf="alldata.filter != null">
+                    <div class="fnt-16 fw-bold text-center">
+                        filter by
+                    </div>
+                    <div class="container mt-3" *ngFor="let item of alldata.filter">
+                        <div class="fnt-14 fw-medium">
+                            {{item.filterType}}
+                        </div>
+                        <div class="row text-center">
+                            <div class="col-12 row" *ngFor="let name of item.filterName; let index = index">
+                                <div class="col-3">
+                                    <input type="checkbox" (click)="arFilter(item.filterType, name)">
+                                </div>
+                                <div class="col-9 fnt-12 pt-1">
+                                    {{name}}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mb-4">
+                        <div class="row">
+                            <div class="fnt-14 fw-medium">
+                                price
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="fnt-12 my-0">$ from</p>
+                                <input type="number" placeholder="$ from" class="w-90 fnt-12" [(ngModel)]="firstPrice">
+                            </div>
+                            <div class="col-12 mt-2">
+                                <p class="fnt-12 my-0">$ to</p>
+                                <input type="number" placeholder="$ to" class="w-90 fnt-12" [(ngModel)]="secondPrice">
+                            </div>
+                            <div class="col-12">
+                                <button class="btn main-bg-warning w-90 mt-2 fnt-12 text-center mx-auto"
+                                    (click)="priceRange()">calculate</button>
+                            </div>
+                            <div class="col-12 row">
+                                <div class="fnt-12 col-9 pt-2 text-secondary mb-0 d-inline-block" (click)="default()">
+                                    default</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-9 col-xl-10 col-12">
+                <app-allproducts [mainData]="products()"></app-allproducts>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer class="position-relative top-100 w-100"></app-footer>

@@ -1,0 +1,67 @@
+<div class="row d-md-flex d-none mx-md-4 mx-lg-5 px-md-2 px-lg-4 mt-5">
+    <div class="col-3 brd h-col" *ngFor="let item of data; let index = index">
+        <div class="h-100 w-100 px-2">
+            <div class="h-60 position-relative">
+                <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
+                <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"
+                    *ngIf="item.off != item.price">
+                    {{-(item.off - item.price)/item.off | percent}}
+                </div>
+            </div>
+            <div class="h-40">
+                <div>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                </div>
+
+                <p class="fnt-11 text-secondary fw-medium mt-2 mb-0">
+                    {{item.description.caption | limited:8}}
+                </p>
+                <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 pt-1 mb-0"
+                    *ngIf="item.off != item.price">
+                    {{item.off | currency}}</p>
+                <p class="d-inline-block w-50 fw-bold fnt-14 text-dark mt-1 pt-1 mb-0">{{item.price | currency}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row d-md-none d-flex mt-5">
+    <div class="col-12 brd h-col" *ngFor="let item of data; let index = index">
+        <div class="row h-100 w-100 px-2">
+            <div class="col-5 h-100 position-relative">
+                <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
+                <div class="position-absolute shape start-0 fnt-12 fw-medium main-text-dark main-bg-warning"
+                    *ngIf="item.off != item.price">
+                    <div class="pt-1 ">
+                        {{-(item.off - item.price)/item.off | percent}}
+                    </div>
+                </div>
+            </div>
+            <div class="h-40 col-7">
+                <div>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                </div>
+
+                <p class="fnt-12-13 text-dark fw-medium mb-0">
+                    {{item.description.name}}
+                </p>
+
+                <p class="d-inline-block w-30 text-decoration-line-through fnt-12 fw-medium text-secondary pt-1 mb-0"
+                    *ngIf="item.off != item.price">
+                    {{item.off | currency}}</p>
+                <p class="d-inline-block w-30 fw-bold fnt-14 text-dark pt-1 mb-0">{{item.price | currency}}</p>
+
+                <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
+                    {{item.description.caption | limited:14}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

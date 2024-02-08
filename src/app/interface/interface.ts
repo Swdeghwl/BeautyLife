@@ -13,8 +13,7 @@ export enum typeProduct{
 
 export interface Situation {
     productNumber: number;
-    property: Object;
-    colors: string;
+    filter: Filter[]
 }
 
 export interface Description{
@@ -70,6 +69,22 @@ export interface Count{
     count: number;
     routerAddress?: string;
     routerId?: string;
+}
+
+// All Product
+
+// Filter
+
+export interface Filter{
+    filterType: string;
+    filterName: string[];
+}
+
+// All
+
+export interface AllProduct {
+    product: Product[];
+    filter: Filter[];
 }
 
 // main

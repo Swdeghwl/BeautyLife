@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
 import { Product } from 'src/app/interface/interface';
-import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
   selector: 'app-popularproduct',

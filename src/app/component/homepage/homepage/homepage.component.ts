@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomePage } from 'src/app/interface/interface';
+import { AllProduct, HomePage } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 
 @Component({
@@ -11,4 +11,5 @@ export class HomepageComponent {
   constructor(private dataService: DataserviceService){ }
   
   data: HomePage = this.dataService.homepage()
+  Data: AllProduct = this.dataService.allproduct()
 }

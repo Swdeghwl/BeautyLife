@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Count, HomePage, Img, New, Product, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
+import { Count, Filter, HomePage, Img, New, Product, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
 
 @Injectable({
   providedIn: 'root'
@@ -105,11 +105,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 24,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '500 gr'
-          },
-          colors: 'black white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'green', 'black', 'gray'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry'
+              ]
+            }
+          ]
         }
       }
     },
@@ -127,11 +136,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 54,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry', 'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -149,11 +167,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 76,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -171,11 +198,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 23,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -193,11 +229,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 32,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry', 'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -215,11 +260,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 141,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry'
+              ]
+            }
+          ]
         }
       }
     },
@@ -237,11 +291,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 21,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry'
+              ]
+            }
+          ]
         }
       }
     },
@@ -259,11 +322,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 11,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'gray'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+               'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -281,11 +353,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 62,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1000 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'gray', 'green', 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry', 'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -306,11 +387,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 24,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '500 gr'
-          },
-          colors: 'black white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -328,11 +412,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 54,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -350,11 +437,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 76,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -372,11 +462,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 23,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -394,11 +487,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 32,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -416,11 +512,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 141,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black', 'gray'
+              ]
+            },
+          ]
         }
       }
     },
@@ -438,11 +537,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 21,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -460,11 +562,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 11,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -482,11 +587,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 62,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1000 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -504,11 +612,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 54,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -526,11 +637,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 76,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -548,11 +662,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 23,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -570,11 +687,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 32,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -592,11 +712,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 141,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -614,11 +737,14 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 21,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'green', 'black'
+              ]
+            },
+          ]
         }
       }
     },
@@ -636,11 +762,20 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 11,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1500 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'green', 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                 'wet'
+              ]
+            }
+          ]
         }
       }
     },
@@ -658,14 +793,38 @@ export class DataserviceService {
         caption: 'this is the in our store. we want to say something new do you wnt?. products are cheap and you can\'t say I won\'t this product',
         situation: {
           productNumber: 62,
-          property: {
-            sutible: 'sutible for dry skin',
-            weight: '1000 gr'
-          },
-          colors: 'yellow white orange',
+          filter : [
+            {
+              filterType: 'color',
+              filterName: [
+                'red', 'black'
+              ]
+            },
+            {
+              filterType: 'sutible',
+              filterName: [
+                'dry'
+              ]
+            }
+          ]
         }
       }
     },
+  ]
+
+  filter: Filter[] = [
+    {
+      filterType: 'color',
+      filterName: [
+        'red', 'green', 'black', 'gray'
+      ]
+    },
+    {
+      filterType: 'sutible',
+      filterName: [
+        'dry', 'wet'
+      ]
+    }
   ]
 
   constructor() { }
@@ -684,33 +843,40 @@ export class DataserviceService {
     }
   }
 
-  firstproduct(){
+  firstproduct() {
     return {
-    slider: this.slider,
-    category: this.category,
-    newProduct: this.product,
-    popularProduct: this.product,
-    allProduct: this.productAll,
+      slider: this.slider,
+      category: this.category,
+      newProduct: this.product,
+      popularProduct: this.product,
+      allProduct: this.productAll,
     }
   }
 
-  secondproduct(){
+  secondproduct() {
     return {
-    slider: this.slidersecond,
-    category: this.category,
-    newProduct: this.product,
-    popularProduct: this.product,
-    allProduct: this.productAll,
+      slider: this.slidersecond,
+      category: this.category,
+      newProduct: this.product,
+      popularProduct: this.product,
+      allProduct: this.productAll,
     }
   }
 
-  thirdproduct(){
+  thirdproduct() {
     return {
-    slider: this.slider,
-    category: this.category,
-    newProduct: this.product,
-    popularProduct: this.product,
-    allProduct: this.productAll,
+      slider: this.slider,
+      category: this.category,
+      newProduct: this.product,
+      popularProduct: this.product,
+      allProduct: this.productAll,
+    }
+  }
+
+  allproduct() {
+    return {
+      product: this.product,
+      filter: this.filter
     }
   }
 }

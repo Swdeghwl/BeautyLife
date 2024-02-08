@@ -23,6 +23,8 @@ import { FooterComponent } from './component/homepage/components/footer/footer.c
 import { ProductcastComponent } from './component/homepage/cast/productcast/productcast.component';
 import { AllproductComponent } from './component/homepage/components/allproduct/allproduct.component';
 import { FilterComponent } from './component/homepage/components/filter/filter.component';
+import { AllproductsComponent } from './component/homepage/components/allproducts/allproducts.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -43,9 +45,11 @@ import { FilterComponent } from './component/homepage/components/filter/filter.c
     FooterComponent,
     ProductcastComponent,
     AllproductComponent,
-    FilterComponent
+    FilterComponent,
+    AllproductsComponent
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,

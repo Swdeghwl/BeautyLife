@@ -1,6 +1,8 @@
 :root {
     /* colors */
     --main-dark: #343e48;
+    --main-dark-a: #343e484e;
+    --main-dark-b: #343e4820;
     --main-warning: #f5d101;
 
     /* height size */
@@ -22,6 +24,7 @@
     --fnt-10: 10px;
     --fnt-11: 11px;
     --fnt-12: 12px;
+    --fnt-12-13: 12.2px;
     --fnt-13: 13px;
     --fnt-14: 14px;
     --fnt-15: 15px;
@@ -72,12 +75,20 @@
     height: 90% !important;
 }
 
+.w-90{
+    width: 90% !important;
+}
+
 .h-30{
     height: 30% !important;
 }
 
 .w-80 {
     width: 80% !important;
+}
+
+.w-30 {
+    width: 30% !important;
 }
 
 .w-70 {
@@ -90,6 +101,10 @@
 
 .top-90{
     top: 90% !important;
+}
+
+.top-10{
+    top: 5% !important;
 }
 
 .start-85 {
@@ -108,6 +123,10 @@
 
 .fnt-12 {
     font-size: var(--fnt-12) !important;
+}
+
+.fnt-12-13 {
+    font-size: var(--fnt-12-13) !important;
 }
 
 .fnt-13 {
@@ -138,4 +157,16 @@
 
 .z-index-low {
     z-index: 4 !important;
+}
+
+/* mairgin */
+
+.mt-header {
+    margin-top: var(--height-size-3) !important;
+}
+
+@media screen and (max-width: 991.5px) {
+    .mt-header {
+        margin-top: var(--height-size-1) !important;
+    }
 }
