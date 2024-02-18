@@ -1,6 +1,6 @@
 import { Component, ElementRef, HostListener, Input, ViewChild } from '@angular/core';
-import { faClose, faFilter,  } from '@fortawesome/free-solid-svg-icons';
-import { AllProduct, Product } from 'src/app/interface/interface';
+import { faClose, faFilter, } from '@fortawesome/free-solid-svg-icons';
+import { FilterCast, Product } from 'src/app/interface/interface';
 
 
 @Component({
@@ -8,9 +8,9 @@ import { AllProduct, Product } from 'src/app/interface/interface';
   templateUrl: './filter.component.html',
   styleUrls: ['./filter.component.css']
 })
-export class FilterComponent{
+export class FilterComponent {
   // data binding
-  @Input('mainData') public alldata!: AllProduct;
+  @Input('mainData') public alldata!: FilterCast;
 
   // icon
   filterico = faFilter
@@ -20,7 +20,7 @@ export class FilterComponent{
   design: boolean = false
 
   designChanger() {
-    this.design =! this.design
+    this.design = !this.design
     console.log(this.design);
   }
 
@@ -33,7 +33,7 @@ export class FilterComponent{
   price: Product[] = []
 
   filter(title: string, proprty: string) {
-    var products: any = []
+    var products: Product[] = []
     this.alldata.product.forEach((item) => {
       var target: string[] = []
       var list: any = []
@@ -74,8 +74,6 @@ export class FilterComponent{
     if (this.filterNames.length == 0) {
       this.filter(title, proprty)
       this.filterNames.push({ title: title, proprty: proprty })
-
-
     } else {
       var bool: boolean = true
       this.filterNames.forEach((value: any) => {
@@ -159,7 +157,7 @@ export class FilterComponent{
     }
   }
 
-  default(){
+  default() {
     this.firstPrice = 0
     this.secondPrice = 0
     this.price = []
@@ -167,12 +165,24 @@ export class FilterComponent{
   }
 
   products() {
-    if (this.product.length == 0 && this.price.length == 0) {
-      return this.alldata.product
-    } else if (this.product.length == 0 && this.price.length != 0) {
+    if (this.product.length == 0 && this.price.length != 0) {
       return this.price;
-    } else if (this.product.length != 0 && this.price.length == 0) {
+    } else if (this.product.length != 0 && this.price.length == 0 && this.firstPrice != 0 && this.secondPrice != 0) {
+      return [];
+    } else if (this.product.length != 0 && this.price.length == 0 && this.firstPrice == 0 && this.secondPrice != 0) {
+      return [];
+    } else if (this.product.length != 0 && this.price.length == 0 && this.firstPrice != 0 && this.secondPrice == 0) {
+      return [];
+    } else if (this.product.length != 0 && this.price.length == 0 && this.firstPrice == 0 && this.secondPrice == 0) {
       return this.product;
+    } else if (this.product.length == 0 && this.price.length == 0 && this.firstPrice != 0 && this.secondPrice != 0) {
+      return [];
+    } else if (this.product.length == 0 && this.price.length == 0 && this.firstPrice == 0 && this.secondPrice != 0) {
+      return [];
+    } else if (this.product.length == 0 && this.price.length == 0 && this.firstPrice != 0 && this.secondPrice == 0) {
+      return [];
+    } else if (this.product.length == 0 && this.price.length == 0 && this.firstPrice == 0 && this.secondPrice == 0) {
+      return this.alldata.product;
     } else {
       return this.price
     }

@@ -1,5 +1,5 @@
 .h-size {
-    height: 180px !important;
+    height: 200px !important;
 }
 
 .brd-prd{
@@ -31,7 +31,7 @@
 /* for mobile phone */
 @media screen and (max-width: 767px) {
     .h-size {
-        height: 285px !important;
+        height: 150px !important;
     }
 }
 

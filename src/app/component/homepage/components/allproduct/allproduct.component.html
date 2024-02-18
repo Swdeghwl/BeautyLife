@@ -5,7 +5,7 @@
         </div>
     </div>
     <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="data != null">
-        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of data; let index = index">
+        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of data.product; let index = index">
             <div class="h-60 position-relative">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
                 <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"
@@ -22,7 +22,7 @@
                     <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
                 </div>
                 <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
-                    {{item.description.caption | limited:8}}
+                    {{item.description.caption | limited:6}}
                 </p>
                 <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0"
                     *ngIf="item.off != item.price">
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="h-size-col  col-4 col-md-3 col-lg-2 brd">
-            <div class="crcl brd bg-light mx-auto text-center">
+            <div class="crcl brd bg-light mx-auto text-center" [routerLink]="['filter/' + data.productId]">
                 <fa-icon [icon]="right" class="fnt-18 text-primary"></fa-icon>
                 <p class="fnt-14 text-primary">
                     Show All

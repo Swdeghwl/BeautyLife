@@ -103,6 +103,10 @@
         height: 40% !important;
     }
 
+    .margin-top {
+        margin-top: 70px !important;
+    }
+
     .h-size {
         height: 270px !important;
     }

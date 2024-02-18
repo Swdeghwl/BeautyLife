@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
-import { Product } from 'src/app/interface/interface';
+import { Product, Products } from 'src/app/interface/interface';
 
 @Component({
   selector: 'app-popularproduct',
@@ -10,7 +11,7 @@ import { Product } from 'src/app/interface/interface';
 export class PopularproductComponent {
   // develope data
 
-  @Input('mainData') public data!: Product[];
+  @Input('mainData') public data!: Products;
 
   // icons
   right = faAngleRight
@@ -51,12 +52,13 @@ export class PopularproductComponent {
 
   ngOnInit() {
     if (window.innerWidth > 991.5) {
-      this.category(this.product, this.data, 6)
+      this.category(this.product, this.data.product, 6)
     } else if (window.innerWidth > 767) {
-      this.category(this.product, this.data, 4)
+      this.category(this.product, this.data.product, 4)
     } else {
-      this.category(this.product, this.data, 3)
+      this.category(this.product, this.data.product, 3)
     }
+    
   }
 
   next() {

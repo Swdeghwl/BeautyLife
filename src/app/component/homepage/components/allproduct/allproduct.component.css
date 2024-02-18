@@ -72,6 +72,10 @@
         height: 40% !important;
     }
 
+    .h-10 {
+        height: 5% !important;
+    }
+
     .h-size {
         height: 1380px !important;
     }
@@ -97,6 +101,10 @@
 @media screen and (max-width: 767px) {
     .h-60{
         height: 60% !important;
+    }
+
+    .h-10 {
+        height: 3% !important;
     }
 
     .h-40{

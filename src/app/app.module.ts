@@ -25,6 +25,9 @@ import { AllproductComponent } from './component/homepage/components/allproduct/
 import { FilterComponent } from './component/homepage/components/filter/filter.component';
 import { AllproductsComponent } from './component/homepage/components/allproducts/allproducts.component';
 import { FormsModule } from '@angular/forms';
+import { FiltercastComponent } from './component/homepage/cast/filtercast/filtercast.component';
+import { FiltersService } from './services/filters/filters.service';
+import { IdService } from './services/id/id.service';
 
 @NgModule({
   declarations: [
@@ -46,7 +49,8 @@ import { FormsModule } from '@angular/forms';
     ProductcastComponent,
     AllproductComponent,
     FilterComponent,
-    AllproductsComponent
+    AllproductsComponent,
+    FiltercastComponent
   ],
   imports: [
     FormsModule,
@@ -56,7 +60,9 @@ import { FormsModule } from '@angular/forms';
     FontAwesomeModule
   ],
   providers: [
-    DataserviceService
+    DataserviceService,
+    FiltersService,
+    IdService
   ],
   bootstrap: [AppComponent]
 })

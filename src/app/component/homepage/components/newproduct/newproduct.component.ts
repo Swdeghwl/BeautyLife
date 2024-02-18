@@ -1,7 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
-import { HomePage, Product } from 'src/app/interface/interface';
-import { DataserviceService } from 'src/app/services/data/data.service';
+import {  Product, Products } from 'src/app/interface/interface';
 
 @Component({
   selector: 'app-newproduct',
@@ -10,7 +9,7 @@ import { DataserviceService } from 'src/app/services/data/data.service';
 })
 export class NewproductComponent {
   // develope data
-  @Input('mainData') public data!: Product[];
+  @Input('mainData') public data!: Products;
 
 
   // icons
@@ -52,11 +51,11 @@ export class NewproductComponent {
 
   ngOnInit() {
     if (window.innerWidth > 991.5) {
-      this.category(this.product, this.data, 6)
+      this.category(this.product, this.data.product, 6)
     } else if (window.innerWidth > 767) {
-      this.category(this.product, this.data, 4)
+      this.category(this.product, this.data.product, 4)
     } else {
-      this.category(this.product, this.data, 3)
+      this.category(this.product, this.data.product, 3)
     }
   }
 

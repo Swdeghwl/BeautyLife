@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { faAngleRight, faAngleLeft } from '@fortawesome/free-solid-svg-icons';
-import { Img } from 'src/app/interface/interface';
+import { Slider } from 'src/app/interface/interface';
 
 @Component({
   selector: 'app-slider',
@@ -9,7 +9,7 @@ import { Img } from 'src/app/interface/interface';
 })
 export class SliderComponent {
   // develope data
-  @Input('mainData') public data!: Img[];
+  @Input('mainData') public data!: Slider[];
 
   // icons
   right = faAngleRight

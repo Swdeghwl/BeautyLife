@@ -1,4 +1,4 @@
-<div class="h-size mt-md-4 mt-3 position-relative" *ngIf="data != null">
+<div class="h-size mt-md-4 margin-top position-relative" *ngIf="data != null">
     <div class="fw-bold h-10">
         <div class="w-50 h-100 d-inline-block">
             <strong class="fnt-16">New Product</strong>
@@ -19,7 +19,7 @@
         (touchstart)="post = $event.changedTouches[0].pageX" (touchend)="moveTouch($event.changedTouches[0].pageX)">
         <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide; let index = index">
             <div class="h-60 position-relative">
-                <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
+                <img [src]="item.src" [alt]="item.description.name" class="h-100 w-100">
                 <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"
                     *ngIf="item.off != item.price">
                     {{-(item.off - item.price)/item.off | percent}}
@@ -35,7 +35,7 @@
                 </div>
 
                 <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
-                    {{item.description.caption | limited:8}}
+                    {{item.description.caption | limited:6}}
                 </p>
                 <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 mb-0"
                     *ngIf="item.off != item.price">
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="h-size-col  col-4 col-md-3 col-lg-2 brd" *ngIf="boolean">
-            <div class="crcl brd bg-light mx-auto text-center">
+            <div class="crcl brd bg-light mx-auto text-center" [routerLink]="['filter/' + data.productId]">
                 <fa-icon [icon]="right" class="fnt-18 text-primary"></fa-icon>
                 <p class="fnt-14 text-primary">
                     Show All

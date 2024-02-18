@@ -18,7 +18,7 @@
                 </div>
 
                 <p class="fnt-11 text-secondary fw-medium mt-2 mb-0">
-                    {{item.description.caption | limited:8}}
+                    {{item.description.caption | limited:6}}
                 </p>
                 <p class="d-inline-block w-50 text-decoration-line-through fnt-12 fw-medium text-secondary mt-1 pt-1 mb-0"
                     *ngIf="item.off != item.price">

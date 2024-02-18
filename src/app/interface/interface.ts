@@ -3,9 +3,13 @@
 export enum productSituation {
     popular,
     new,
+    nothing,
+    cheap,
+    expensive,
+    highQuality
 }
 
-export enum typeProduct{
+export enum typeProduct {
     firstProduct,
     secondProduct,
     thirdProduct
@@ -16,7 +20,7 @@ export interface Situation {
     filter: Filter[]
 }
 
-export interface Description{
+export interface Description {
     name: string;
     caption: string;
     situation: Situation;
@@ -34,6 +38,20 @@ export interface Product {
     description: Description;
 }
 
+export interface Products {
+    product: Product[];
+    productId: string | undefined;
+}
+
+
+// id
+
+export interface IdProduct {
+    idNew: string;
+    idPopular: string;
+    idAll?: string;
+}
+
 // New
 
 export interface New {
@@ -45,17 +63,36 @@ export interface New {
 
 // Img
 
-export enum sliderSituation{
-    homepageSlider,
-    firstSlider,
-    secondSlider,
-    thirdeSlider,
-    categoryImg,
-    popularImg,
-    newImg
+export enum imgSituation {
+    // add
+    homepageAdd,
+    firstAdd,
+    secondAdd,
+    thirdAdd,
+
+    // off
+    popular,
+    new,
 }
 
 export interface Img {
+    src: string;
+    alt: string
+    situation: imgSituation;
+    routerId: string;
+}
+
+// Slider
+
+export enum sliderSituation {
+    // slider
+    homepageSlider,
+    firstSlider,
+    secondSlider,
+    thirdSlider,
+}
+
+export interface Slider {
     src: string;
     alt: string
     situation: sliderSituation;
@@ -63,52 +100,56 @@ export interface Img {
 
 // Count
 
-export interface Count{
-    src: string;
-    name: string;
-    count: number;
-    routerAddress?: string;
-    routerId?: string;
+export enum countSituatoin{
+    brand,
+    product
 }
 
-// All Product
-
+export interface Count {
+    src: string;
+    alt: string;
+    name: string;
+    count: number;
+    situation: countSituatoin;
+    routerId: string;
+}
 // Filter
 
-export interface Filter{
+export interface Filter {
+    name?: string;
     filterType: string;
     filterName: string[];
 }
 
-// All
-
-export interface AllProduct {
-    product: Product[];
-    filter: Filter[];
-}
-
-// main
+// Main Cast
 
 // Homepage
 
-export interface HomePage{
-    slider: Img[],
-    category: Img[],
-    products: Count[],
-    newProduct: Product[],
-    newImg: Img[],
-    popularProduct: Product[],
-    popularImg: Img[],
-    brands: Count[],
-    news: New[],
+export interface HomePage {
+    slider: Slider[];
+    category: Img[];
+    products: Count[];
+    newProduct: Products;
+    newImg: Img[];
+    popularProduct: Products;
+    popularImg: Img[];
+    brands: Count[];
+    news: New[];
 }
 
 // ProductCast
 
 export interface ProductCast {
-    slider: Img[],
-    category: Img[],
-    newProduct: Product[],
-    popularProduct: Product[],
-    allProduct: Product[]
+    slider: Slider[];
+    category: Img[];
+    newProduct: Products;
+    popularProduct: Products;
+    allProduct: Products;
+}
+
+// FilterCast
+
+export interface FilterCast {
+    product: Product[];
+    filter: Filter[]
 }

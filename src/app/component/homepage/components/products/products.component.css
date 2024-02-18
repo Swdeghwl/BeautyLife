@@ -32,18 +32,26 @@
     }
 
     .fnt-14 {
-        font-size: var(--font-name) !important;
+        font-size: var(--fnt-13) !important;
     }
 
     .fnt-11 {
-        font-size: var(--font-number);
+        font-size: var(--fnt-10);
     }
 }
 
 /* for phone */
 @media screen and (max-width: 767px) {
     .h-size {
-        height: 370px;
+        height: 340px;
+    }
+
+    .margin-top {
+        margin-top: 180px !important;
+    }
+
+    .h-90 {
+        height: 170px !important;
     }
 
     .w-80 {
@@ -51,10 +59,10 @@
     }
         
     .fnt-14 {
-        font-size: var(--font-ls-name) !important;
+        font-size: var(--fnt-12) !important;
     }
 
     .fnt-11 {
-        font-size: var(--font-ls-number);
+        font-size: var(--fnt-9);
     }
 }
