@@ -1,0 +1,132 @@
+<app-firstheader></app-firstheader>
+<app-secondheader></app-secondheader>
+
+<div class="container-fluid mt-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="sticky" *ngIf="situation == true">
+                    <div class="w-80 mx-auto brd brd-rad">
+                        <div class="w-80 mx-auto">
+                            <p class="fnt-18 fw-bold text-center">whole price: {{cartServices.prices| currency}}</p>
+                            <p class="fnt-16 fw-bold text-center text-secondary">whole off: {{cartServices.off |
+                                currency}}</p>
+                            <button class="btn main-bg-warning w-100 fnt-15 my-2">buy product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 brd brd-rad h-size">
+                <div class="">
+                    <h2>cart</h2>
+                    <p class="fnt-14 text-secondary fw-medium d-inline-block mx-5">(count): </p>
+                    <p class="fnt-14 text-secondary fw-medium d-inline-block mx-5">(type): </p>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 brd h-col" *ngFor="let item of data; let index = index">
+                        <div class="row h-100 w-100 px-2">
+                            <div class="col-5 h-100 position-relative" [routerLink]="['sell/' + item[0].id]">
+                                <img [src]="item[0].srcAll[1]" [alt]="item[0].src" class="h-100 w-100">
+                                <div class="position-absolute shape start-0 fnt-12 fw-medium main-text-dark main-bg-warning"
+                                    *ngIf="item[0].off != item[0].price">
+                                    <div class="pt-1 ">
+                                        {{-(item[0].off - item[0].price)/item[0].off | percent}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="h-40 col-7 mt-2">
+                                <div>
+                                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                                    <fa-icon [icon]="star" class="text-warning fnt-11"></fa-icon>
+                                </div>
+
+                                <p class="fnt-12-13 text-dark fw-medium mb-0">
+                                    {{item[0].description.name}}
+                                </p>
+
+                                <p class="d-inline-block w-30 text-decoration-line-through fnt-12 fw-medium text-secondary pt-1 mb-0"
+                                    *ngIf="item[0].off != item[0].price">
+                                    {{item[0].off | currency}}</p>
+                                <p class="d-inline-block w-30 fw-bold fnt-14 text-dark pt-1 mb-0">{{item[0].price |
+                                    currency}}</p>
+
+                                <p class="fnt-11 text-secondary fw-medium mt-1 mb-0">
+                                    {{item[0].description.caption | limited:14}}
+                                </p>
+                                <div class="row mt-4" *ngIf="item.length == 1">
+                                    <div class="col-2">
+                                        <p class="fnt-15 fw-bold" [routerLink]="['sell/' + item[0].id]"
+                                            (click)="sendData(item[0].description.situation.filter.filterName[0])">
+                                            {{item[0].description.situation.filter.filterName[0]}}
+                                        </p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="fnt-14 fw-medium">
+                                            price : {{item[0].whole | currency}}
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="fnt-14 fw-medium">
+                                            count : {{item[0].count}}
+                                        </p>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="brd brd-rad w-100 h-75">
+                                            <div class="sign" (click)="plusnumber(item[0])">
+                                                <fa-icon [icon]="plus" class="fnt-14"></fa-icon>
+                                            </div>
+                                            <div class="sign" (click)="minusmumber(item[0])">
+                                                <fa-icon [icon]="minus" class="fnt-14"></fa-icon>
+                                            </div>
+                                            <div class="sign brd-start" (click)="remove(index ,item[0])">
+                                                <fa-icon [icon]="trash" class="fnt-14"></fa-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div *ngIf="item.length > 1">
+                                    <div class="row mt-1" *ngFor="let itm of item">
+                                        <div class="col-2">
+                                            <p class="fnt-15 fw-bold" [routerLink]="['sell/' + itm.id]"
+                                                (click)="sendData(itm.description.situation.filter.filterName[0])">
+                                                {{itm.description.situation.filter.filterName[0]}}
+                                            </p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="fnt-14 fw-medium">
+                                                price : {{itm.whole | currency}}
+                                            </p>
+                                        </div>
+                                        <div class="col-3">
+                                            <p class="fnt-14 fw-medium">
+                                                count : {{itm.count}}
+                                            </p>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="brd brd-rad w-100 h-75">
+                                                <div class="sign" (click)="plusnumber(itm)">
+                                                    <fa-icon [icon]="plus" class="fnt-14"></fa-icon>
+                                                </div>
+                                                <div class="sign" (click)="minusmumber(itm)">
+                                                    <fa-icon [icon]="minus" class="fnt-14"></fa-icon>
+                                                </div>
+                                                <div class="sign brd-start" (click)="remove(index ,itm)">
+                                                    <fa-icon [icon]="trash" class="fnt-14"></fa-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>

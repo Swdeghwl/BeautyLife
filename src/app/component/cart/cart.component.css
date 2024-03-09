@@ -1,17 +1,13 @@
 .h-size {
-    height: 307px;
+    min-height: 400px;
 }
 
-.h-size-col {
-    height: 250px !important;
-}
-
-.bg-white {
-    background-color: #fff !important;
+.h-col{
+    min-height: 200px;
 }
 
 .brd {
-    border: 1px solid var(--bs-secondary);
+    border: 0.7px solid var(--bs-secondary);
 }
 
 .shape {
@@ -20,11 +16,18 @@
     top: 3% !important;
 }
 
-.crcl { 
-    width: 50%;
-    height: 25%;
-    border-radius: 50%;
-    margin-top: 80%;
+.brd-rad {
+    border-radius: var(--product);
+}
+
+.sign {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+.sticky {
+    position: sticky !important;
+    top: 170px !important;
 }
 
 /* responsive */
@@ -43,10 +46,6 @@
 
     .h-40{
         height: 40% !important;
-    }
-
-    .h-size {
-        height: 340px;
     }
 
     .fnt-11{
@@ -72,14 +71,6 @@
         height: 40% !important;
     }
 
-    .h-size {
-        height: 300px !important;
-    }
-
-    .h-size-col {
-        height: 250px !important;
-    }
-
     .fnt-11{
         font-size: 11px !important;
     }
@@ -95,6 +86,18 @@
 
 /* for mobile phone */
 @media screen and (max-width: 767px) {
+    .h-col {
+        height: 120px;
+    }
+
+    .shape {
+        width: 20px;
+        height: 15px;
+        border-radius: 70% 40% 30% 25%;
+        transform: rotate(30deg);
+        top: 3% !important;
+    }    
+
     .h-60{
         height: 60% !important;
     }
@@ -103,24 +106,16 @@
         height: 40% !important;
     }
 
-    .h-size {
-        height: 270px !important;
-    }
-
-    .h-size-col {
-        height: 220px !important;
-    }
-
     .fnt-11{
-        font-size: 8px !important;
+        font-size: 9px !important;
     }
 
     .fnt-12{
-        font-size: 8px !important;
+        font-size: 10px !important;
     }
 
     .fnt-14{
-        font-size: 9px !important;
+        font-size: 12px !important;
     }
 
     .w-15 {
@@ -140,14 +135,6 @@
 
     .h-40{
         height: 40% !important;
-    }
-
-    .h-size {
-        height: 300px !important;
-    }
-
-    .h-size-col {
-        height: 250px !important;
     }
 
     .fnt-11{

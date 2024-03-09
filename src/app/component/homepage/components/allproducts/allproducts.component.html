@@ -1,5 +1,5 @@
 <div class="row d-md-flex d-none mx-md-4 mx-lg-5 px-md-2 px-lg-4 mt-5">
-    <div class="col-3 brd h-col" *ngFor="let item of data; let index = index">
+    <div class="col-3 brd h-col" *ngFor="let item of data; let index = index" [routerLink]="['sell/' + item.id]">
         <div class="h-100 w-100 px-2">
             <div class="h-60 position-relative">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">
@@ -29,7 +29,7 @@
     </div>
 </div>
 <div class="row d-md-none d-flex mt-5">
-    <div class="col-12 brd h-col" *ngFor="let item of data; let index = index">
+    <div class="col-12 brd h-col" *ngFor="let item of data; let index = index" [routerLink]="['sell/' + item.id]">
         <div class="row h-100 w-100 px-2">
             <div class="col-5 h-100 position-relative">
                 <img [src]="item.src" [alt]="item.src" class="h-100 w-100">

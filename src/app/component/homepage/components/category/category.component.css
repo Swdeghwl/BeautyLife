@@ -2,6 +2,10 @@
     height: 200px !important;
 }
 
+.h-col {
+    height: 200px;
+}
+
 .brd-prd{
     border-radius: var(--product);
 }
@@ -31,7 +35,11 @@
 /* for mobile phone */
 @media screen and (max-width: 767px) {
     .h-size {
-        height: 150px !important;
+        height: 400px !important;
+    }
+
+    .h-col {
+        height: 200px !important;
     }
 }
 

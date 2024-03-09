@@ -43,15 +43,15 @@
 /* for phone */
 @media screen and (max-width: 767px) {
     .h-size {
-        height: 340px;
-    }
-
-    .margin-top {
-        margin-top: 180px !important;
+        height: 400px;
     }
 
     .h-90 {
         height: 170px !important;
+    }
+
+    .h-10{
+        height: 30px !important;
     }
 
     .w-80 {

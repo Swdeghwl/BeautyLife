@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { faAngleLeft, faAngleRight, faStar } from '@fortawesome/free-solid-svg-icons';
 import {  Product, Products } from 'src/app/interface/interface';
+import { CartService } from 'src/app/services/cart/cart.service';
 
 @Component({
   selector: 'app-newproduct',
@@ -8,6 +9,7 @@ import {  Product, Products } from 'src/app/interface/interface';
   styleUrls: ['./newproduct.component.css']
 })
 export class NewproductComponent {
+
   // develope data
   @Input('mainData') public data!: Products;
 

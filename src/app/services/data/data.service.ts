@@ -5,10 +5,15 @@ import { Count, Img, New, Product, Slider, countSituatoin, imgSituation, product
   providedIn: 'root'
 })
 export class DataserviceService {
+
+  constructor() { }
+
+
   product(): Product[] {
     return [
       {
         id: '1',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/1/200/300',
         off: 15,
         price: 60,
@@ -21,21 +26,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 3,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['red'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['red'],
+            }
           },
         },
       },
       {
         id: '2',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/2/200/300',
         off: 10,
         price: 50,
@@ -48,21 +49,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 2,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['green'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter: {
+              filterType: 'color',
+              filterName: ['green'],
+            }
+
           },
         },
       },
       {
         id: '3',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/3/200/300',
         off: 25,
         price: 80,
@@ -75,21 +72,17 @@ export class DataserviceService {
           caption: 'Another popular product with color and suitability filters',
           situation: {
             productNumber: 5,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['black'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+            }
           },
         },
       },
       {
         id: '4',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/4/200/300',
         off: 18,
         price: 70,
@@ -98,25 +91,21 @@ export class DataserviceService {
         situation: productSituation.new,
         type: typeProduct.firstProduct,
         description: {
-          name: 'Product W',
-          caption: 'A new product with color and suitability filters',
+          name: 'Product USB wireless 7654',
+          caption: 'A new product with color and suitability filters A new product with color and suitability filters A new product with color and suitability filters A new product with color and suitability filters A new product with color and suitability filters A new product with color and suitability filters',
           situation: {
             productNumber: 6,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['gray'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['gray', 'black', 'red'],
+            }
           },
         },
       },
       {
         id: '5',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/5/200/300',
         off: 12,
         price: 55,
@@ -129,21 +118,17 @@ export class DataserviceService {
           caption: 'Another popular product with color and suitability filters',
           situation: {
             productNumber: 8,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['red'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['red'],
+            }
           },
         },
       },
       {
         id: '6',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/6/200/300',
         off: 20,
         price: 65,
@@ -156,21 +141,16 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 1,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['green'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter: {
+              filterType: 'color',
+              filterName: ['green'],
+            }
           },
         },
       },
       {
         id: '7',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/7/200/300',
         off: 15,
         price: 60,
@@ -183,21 +163,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 3,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['red'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['red'],
+            }
           },
         },
       },
       {
         id: '8',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/8/200/300',
         off: 10,
         price: 50,
@@ -210,21 +186,16 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 2,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['green'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter: {
+              filterType: 'color',
+              filterName: ['green'],
+            }
           },
         },
       },
       {
         id: '9',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/9/200/300',
         off: 25,
         price: 80,
@@ -237,21 +208,17 @@ export class DataserviceService {
           caption: 'Another popular product with color and suitability filters',
           situation: {
             productNumber: 5,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['black'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+            }
           },
         },
       },
       {
         id: '10',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/10/200/300',
         off: 18,
         price: 70,
@@ -264,21 +231,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 6,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['gray'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['gray'],
+            }
           },
         },
       },
       {
         id: '11',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/11/200/300',
         off: 20,
         price: 70,
@@ -291,21 +254,17 @@ export class DataserviceService {
           caption: 'Another popular product with color and suitability filters',
           situation: {
             productNumber: 8,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['red'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['red'],
+            }
           },
         },
       },
       {
         id: '12',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/12/200/300',
         off: 15,
         price: 65,
@@ -318,21 +277,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 4,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['green'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['green'],
+            }
           },
         },
       },
       {
         id: '13',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/13/200/300',
         off: 22,
         price: 75,
@@ -345,21 +300,17 @@ export class DataserviceService {
           caption: 'Another popular product with color and suitability filters',
           situation: {
             productNumber: 7,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['blue'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['blue'],
+            }
           },
         },
       },
       {
         id: '14',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/14/200/300',
         off: 12,
         price: 55,
@@ -372,21 +323,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 10,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['orange'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+            },
           },
         },
       },
       {
         id: '15',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/15/200/300',
         off: 18,
         price: 70,
@@ -399,21 +346,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 9,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['purple'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['purple'],
+            }
           },
         },
       },
       {
         id: '16',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/16/200/300',
         off: 20,
         price: 75,
@@ -426,21 +369,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 11,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '17',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/17/200/300',
         off: 15,
         price: 65,
@@ -453,21 +392,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 12,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['normal'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+            }
           },
         },
       },
       {
         id: '18',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/18/200/300',
         off: 22,
         price: 80,
@@ -480,21 +415,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 13,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['normal'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '19',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/19/200/300',
         off: 12,
         price: 55,
@@ -507,21 +438,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 14,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['normal'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+            }
           },
         },
       },
       {
         id: '20',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/20/200/300',
         off: 18,
         price: 70,
@@ -534,21 +461,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 15,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['orange'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+            },
           },
         },
       },
       {
         id: '21',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/21/200/300',
         off: 20,
         price: 75,
@@ -561,21 +484,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 16,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            },
           },
         },
       },
       {
         id: '22',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/22/200/300',
         off: 15,
         price: 65,
@@ -588,21 +507,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 17,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+            }
           },
         },
       },
       {
         id: '23',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/23/200/300',
         off: 22,
         price: 80,
@@ -615,21 +530,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 18,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '24',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/24/200/300',
         off: 12,
         price: 55,
@@ -642,21 +553,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 19,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '25',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/25/200/300',
         off: 18,
         price: 70,
@@ -669,21 +577,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 20,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['purple'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['purple'],
+            }
           },
         },
       },
       {
         id: '26',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/26/200/300',
         off: 20,
         price: 75,
@@ -696,21 +600,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 21,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '27',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/27/200/300',
         off: 15,
         price: 65,
@@ -723,21 +623,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 22,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '28',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/28/200/300',
         off: 22,
         price: 80,
@@ -750,21 +647,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 23,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '29',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/29/200/300',
         off: 12,
         price: 55,
@@ -777,21 +670,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 24,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '30',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/30/200/300',
         off: 18,
         price: 70,
@@ -804,21 +694,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 25,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['orange'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+            }
           },
         },
       },
       {
         id: '31',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/31/200/300',
         off: 20,
         price: 75,
@@ -831,21 +717,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 26,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '32',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/32/200/300',
         off: 15,
         price: 65,
@@ -858,21 +740,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 27,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '33',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/33/200/300',
         off: 22,
         price: 80,
@@ -885,21 +764,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 28,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '34',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/34/200/300',
         off: 12,
         price: 55,
@@ -912,21 +787,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 29,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '35',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/35/200/300',
         off: 18,
         price: 70,
@@ -939,21 +811,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 30,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['purple'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['purple'],
+            }
           },
         },
       },
       {
         id: '36',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/36/200/300',
         off: 20,
         price: 75,
@@ -966,21 +834,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 31,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '37',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/37/200/300',
         off: 15,
         price: 65,
@@ -993,21 +857,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 32,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '38',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/38/200/300',
         off: 22,
         price: 80,
@@ -1020,21 +881,17 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 33,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '39',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/39/200/300',
         off: 12,
         price: 55,
@@ -1047,21 +904,18 @@ export class DataserviceService {
           caption: 'A product with color and suitability filters',
           situation: {
             productNumber: 34,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '40',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/40/200/300',
         off: 18,
         price: 70,
@@ -1074,21 +928,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 35,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['orange'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+            }
           },
         },
       },
       {
         id: '41',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/41/200/300',
         off: 20,
         price: 75,
@@ -1101,21 +951,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 36,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '42',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/42/200/300',
         off: 15,
         price: 65,
@@ -1128,21 +974,18 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 37,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '43',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/43/200/300',
         off: 22,
         price: 80,
@@ -1155,21 +998,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 38,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '44',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/44/200/300',
         off: 12,
         price: 55,
@@ -1182,21 +1021,18 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 39,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '45',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/45/200/300',
         off: 18,
         price: 70,
@@ -1209,21 +1045,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 40,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['purple'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['purple'],
+            }
           },
         },
       },
       {
         id: '46',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/46/200/300',
         off: 20,
         price: 75,
@@ -1236,21 +1068,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 41,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '47',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/47/200/300',
         off: 15,
         price: 65,
@@ -1263,21 +1091,18 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 42,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '48',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/48/200/300',
         off: 22,
         price: 80,
@@ -1290,21 +1115,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 43,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '49',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/49/200/300',
         off: 12,
         price: 55,
@@ -1317,21 +1138,18 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 44,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
       {
         id: '50',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/50/200/300',
         off: 18,
         price: 70,
@@ -1344,21 +1162,17 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 45,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['orange'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+            }
           },
         },
       },
       {
         id: '51',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/51/200/300',
         off: 20,
         price: 75,
@@ -1371,21 +1185,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 46,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['yellow'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+            }
           },
         },
       },
       {
         id: '52',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/52/200/300',
         off: 15,
         price: 65,
@@ -1398,21 +1208,18 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 47,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['brown'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
           },
         },
       },
       {
         id: '53',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/53/200/300',
         off: 22,
         price: 80,
@@ -1425,21 +1232,17 @@ export class DataserviceService {
           caption: 'A new product with color and suitability filters',
           situation: {
             productNumber: 48,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['cyan'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['dry'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+            }
           },
         },
       },
       {
         id: '54',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
         src: 'https://picsum.photos/id/54/200/300',
         off: 12,
         price: 55,
@@ -1452,16 +1255,12 @@ export class DataserviceService {
           caption: 'A popular product with color and suitability filters',
           situation: {
             productNumber: 49,
-            filter: [
-              {
-                filterType: 'color',
-                filterName: ['magenta'],
-              },
-              {
-                filterType: 'sutible',
-                filterName: ['wet'],
-              },
-            ],
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
           },
         },
       },
@@ -1828,7 +1627,7 @@ export class DataserviceService {
 
   // slider category
 
-  sliderCategory(situation: sliderSituation){
+  sliderCategory(situation: sliderSituation) {
     var slider: Slider[] = this.slider()
     var sliderCtg: Slider[] = []
     slider.forEach((value) => {
@@ -1839,16 +1638,16 @@ export class DataserviceService {
     return sliderCtg
   }
 
-    // count category
+  // count category
 
-    countCategory(situation: countSituatoin){
-      var count: Count[] = this.count()
-      var countCtg: Count[] = []
-      count.forEach((value) => {
-        if (value.situation == situation) {
-          countCtg.push(value)
-        }
-      })
-      return countCtg
-    }
+  countCategory(situation: countSituatoin) {
+    var count: Count[] = this.count()
+    var countCtg: Count[] = []
+    count.forEach((value) => {
+      if (value.situation == situation) {
+        countCtg.push(value)
+      }
+    })
+    return countCtg
+  }
 }

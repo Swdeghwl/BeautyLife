@@ -17,7 +17,7 @@
     <div class="row w-100 position-absolute {{zIndex}} px-2 pt-3 px-3 h-90 bg-white"></div>
     <div class="row w-100 position-absolute z-2 px-2 pt-3 px-3 h-90 " *ngIf="slide != null"
         (touchstart)="post = $event.changedTouches[0].pageX" (touchend)="moveTouch($event.changedTouches[0].pageX)">
-        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide; let index = index">
+        <div class="h-size-col col-4 col-md-3 col-lg-2 brd" *ngFor="let item of slide; let index = index" [routerLink]="['sell/' + item.id]">
             <div class="h-60 position-relative">
                 <img [src]="item.src" [alt]="item.description.name" class="h-100 w-100">
                 <div class="position-absolute shape start-0 fnt-11 main-text-dark main-bg-warning"

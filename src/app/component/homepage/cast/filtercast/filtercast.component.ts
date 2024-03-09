@@ -14,7 +14,6 @@ export class FiltercastComponent {
   routerId!: any;
   constructor(private dataService: DataserviceService, private filterService: FiltersService, private idservices: IdService , private rout: ActivatedRoute) {
   this.routerId = this.rout.snapshot.paramMap.get('id')
-  console.log(this.routerId);
   
   }
 
@@ -43,7 +42,18 @@ export class FiltercastComponent {
       this.data = this.addFilter(this.dataService.productCategorySituation(typeProduct.firstProduct, productSituation.popular), this.filterService.firstProduct())
     } else if(this.routerId == this.idservices.firstProductIdProduct().idAll) {
       this.data = this.addFilter(this.dataService.productCategory(typeProduct.firstProduct), this.filterService.firstProduct())
-      
+    } else if(this.routerId == this.idservices.secondProductIdProduct().idNew) {
+      this.data = this.addFilter(this.dataService.productCategorySituation(typeProduct.secondProduct, productSituation.new), this.filterService.secondProduct())
+    } else if(this.routerId == this.idservices.secondProductIdProduct().idPopular) {
+      this.data = this.addFilter(this.dataService.productCategorySituation(typeProduct.secondProduct, productSituation.popular), this.filterService.secondProduct())
+    } else if(this.routerId == this.idservices.secondProductIdProduct().idAll) {
+      this.data = this.addFilter(this.dataService.productCategory(typeProduct.secondProduct), this.filterService.secondProduct())
+    } else if(this.routerId == this.idservices.thirdProductIdProduct().idNew) {
+      this.data = this.addFilter(this.dataService.productCategorySituation(typeProduct.thirdProduct, productSituation.new), this.filterService.thirdProduct())
+    } else if(this.routerId == this.idservices.thirdProductIdProduct().idPopular) {
+      this.data = this.addFilter(this.dataService.productCategorySituation(typeProduct.thirdProduct, productSituation.popular), this.filterService.thirdProduct())
+    } else if(this.routerId == this.idservices.thirdProductIdProduct().idAll) {
+      this.data = this.addFilter(this.dataService.productCategory(typeProduct.thirdProduct), this.filterService.thirdProduct())
     }
   }
 }

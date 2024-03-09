@@ -28,6 +28,11 @@ import { FormsModule } from '@angular/forms';
 import { FiltercastComponent } from './component/homepage/cast/filtercast/filtercast.component';
 import { FiltersService } from './services/filters/filters.service';
 import { IdService } from './services/id/id.service';
+import { SellcastComponent } from './component/homepage/cast/sellcast/sellcast.component';
+import { SellComponent } from './component/homepage/components/sell/sell.component';
+import { CartComponent } from './component/cart/cart.component';
+import { CartService } from './services/cart/cart.service';
+import { SituationService } from './services/situation/situation.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +55,10 @@ import { IdService } from './services/id/id.service';
     AllproductComponent,
     FilterComponent,
     AllproductsComponent,
-    FiltercastComponent
+    FiltercastComponent,
+    SellcastComponent,
+    SellComponent,
+    CartComponent
   ],
   imports: [
     FormsModule,
@@ -62,7 +70,9 @@ import { IdService } from './services/id/id.service';
   providers: [
     DataserviceService,
     FiltersService,
-    IdService
+    IdService,
+    CartService,
+    SituationService
   ],
   bootstrap: [AppComponent]
 })

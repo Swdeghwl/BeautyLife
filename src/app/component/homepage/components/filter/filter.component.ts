@@ -37,10 +37,10 @@ export class FilterComponent {
     this.alldata.product.forEach((item) => {
       var target: string[] = []
       var list: any = []
-      item.description.situation.filter.forEach((value) => {
-        target.push(value.filterType)
-        list.push(value.filterName)
-      })
+      var value = item.description.situation.filter
+      target.push(value.filterType)
+      list.push(value.filterName)
+      
       target.forEach((value) => {
         if (value == title) {
           list.forEach((value: string[]) => {

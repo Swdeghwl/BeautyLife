@@ -17,7 +17,7 @@ export enum typeProduct {
 
 export interface Situation {
     productNumber: number;
-    filter: Filter[]
+    filter: Filter
 }
 
 export interface Description {
@@ -28,6 +28,7 @@ export interface Description {
 
 export interface Product {
     id: string;
+    srcAll: string[];
     src: string;
     off: number;
     price: number;
@@ -41,6 +42,11 @@ export interface Product {
 export interface Products {
     product: Product[];
     productId: string | undefined;
+}
+
+export interface ProductId {
+    product: Product;
+    productId: string;
 }
 
 
