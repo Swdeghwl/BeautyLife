@@ -42,6 +42,7 @@ export class SignUpComponent {
       if(item.status == 'Success'){
         this.rout.navigate([''])
         this.situationService.getAccount().subscribe(param => {this.situationService.account = param})
+        this.situationService.signIn = true
       } else{
         console.log('Errore');
       }

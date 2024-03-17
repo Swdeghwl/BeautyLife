@@ -31,7 +31,7 @@
                                     <fa-icon [icon]="signIn"></fa-icon>
                                 </div>
                             </div>
-                            <div class="main-text-warning mt-1 d-inline-block w-50 h-75" routerLink="/sign/In" *ngIf="bool == false">
+                            <div class="main-text-warning mt-1 d-inline-block w-50 h-75" routerLink="/sign/In/sign/In" *ngIf="bool == false">
                                 <div class="w-30 mx-auto fnt-18">
                                     <fa-icon [icon]="singUp"></fa-icon>
                                 </div>
@@ -81,11 +81,11 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="h-100 w-100 text-light fnt-18 mt-2">
+                <div class="h-100 w-100 text-light fnt-18 mt-2" routerLink="/category" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                     <div class="w-100 text-center">
                         <fa-icon [icon]="group"></fa-icon>
                     </div>
-                    <p class="fnt-14 pt-0 mt-0 w-100 text-center">products</p>
+                    <p class="fnt-14 pt-0 mt-0 w-100 text-center">category</p>
                 </div>
             </div>
             <div class="col-3">

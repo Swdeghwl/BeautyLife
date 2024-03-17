@@ -15,7 +15,7 @@ export class SituationService {
 
   account: Account = {
     userName: 'Mohammad-sob',
-    address: 'aznjan',
+    address: 'zanjan',
     email: 'mohammad@gmail.com',
     name: 'Mohammad',
     birthday: '12 january 2007',

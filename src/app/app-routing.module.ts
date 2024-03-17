@@ -9,6 +9,7 @@ import { SignComponent } from './component/sign/sign.component';
 import { AccountcastComponent } from './component/homepage/cast/accountcast/accountcast.component';
 import { SearchcastComponent } from './component/homepage/cast/searchcast/searchcast.component';
 import { SituationcastComponent } from './component/homepage/cast/situationcast/situationcast.component';
+import { CategorycastComponent } from './component/homepage/cast/categorycast/categorycast.component';
 
 
 const routes: Routes = [
@@ -104,6 +105,12 @@ const routes: Routes = [
   {
     path: 'product/:id/situation/:id',
     component: SituationcastComponent
+  },
+
+  // category
+  {
+    path: 'category',
+    component: CategorycastComponent
   },
 ];
 

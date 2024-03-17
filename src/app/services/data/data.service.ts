@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Count, Img, New, Product, Slider, countSituatoin, imgSituation, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
+import { Brand, Count, Img, New, Product, Slider, countSituatoin, imgSituation, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
 
 @Injectable({
   providedIn: 'root'
@@ -23,6 +23,7 @@ export class DataserviceService {
         off: 15,
         price: 60,
         whole: 60,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -46,6 +47,7 @@ export class DataserviceService {
         off: 10,
         price: 50,
         whole: 50,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -69,6 +71,7 @@ export class DataserviceService {
         off: 25,
         price: 80,
         whole: 80,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
@@ -92,6 +95,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.expensive,
         type: typeProduct.firstProduct,
@@ -115,6 +119,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -138,6 +143,7 @@ export class DataserviceService {
         off: 20,
         price: 65,
         whole: 65,
+        brand: Brand.brand_1,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
@@ -160,6 +166,7 @@ export class DataserviceService {
         off: 15,
         price: 60,
         whole: 60,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -183,6 +190,7 @@ export class DataserviceService {
         off: 10,
         price: 50,
         whole: 50,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -205,6 +213,7 @@ export class DataserviceService {
         off: 25,
         price: 80,
         whole: 80,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
@@ -228,6 +237,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -251,6 +261,7 @@ export class DataserviceService {
         off: 20,
         price: 70,
         whole: 70,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -274,6 +285,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_2,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -297,6 +309,7 @@ export class DataserviceService {
         off: 22,
         price: 75,
         whole: 75,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.secondProduct,
@@ -320,6 +333,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -343,6 +357,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -366,6 +381,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -389,6 +405,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -412,6 +429,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -435,6 +453,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -458,6 +477,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_3,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.thirdProduct,
@@ -481,6 +501,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -504,6 +525,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.expensive,
         type: typeProduct.secondProduct,
@@ -527,6 +549,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.expensive,
         type: typeProduct.thirdProduct,
@@ -550,6 +573,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.expensive,
         type: typeProduct.firstProduct,
@@ -574,6 +598,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.expensive,
         type: typeProduct.secondProduct,
@@ -597,6 +622,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
@@ -620,6 +646,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.firstProduct,
@@ -644,6 +671,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_4,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.secondProduct,
@@ -667,6 +695,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
@@ -691,6 +720,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.firstProduct,
@@ -714,6 +744,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.secondProduct,
@@ -737,6 +768,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
@@ -761,6 +793,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.firstProduct,
@@ -784,6 +817,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.cheap,
         type: typeProduct.secondProduct,
@@ -808,6 +842,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -831,6 +866,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -854,6 +890,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_5,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -878,6 +915,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.thirdProduct,
@@ -901,6 +939,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -925,6 +964,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -948,6 +988,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -971,6 +1012,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -995,6 +1037,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.brand_6,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -1018,6 +1061,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -1042,6 +1086,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -1065,6 +1110,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -1088,6 +1134,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -1112,6 +1159,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.thirdProduct,
@@ -1135,6 +1183,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.firstProduct,
@@ -1159,6 +1208,7 @@ export class DataserviceService {
         off: 18,
         price: 70,
         whole: 70,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.secondProduct,
@@ -1182,6 +1232,7 @@ export class DataserviceService {
         off: 20,
         price: 75,
         whole: 75,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.thirdProduct,
@@ -1205,6 +1256,7 @@ export class DataserviceService {
         off: 15,
         price: 65,
         whole: 65,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.firstProduct,
@@ -1229,6 +1281,7 @@ export class DataserviceService {
         off: 22,
         price: 80,
         whole: 80,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.new,
         type: typeProduct.secondProduct,
@@ -1252,6 +1305,7 @@ export class DataserviceService {
         off: 12,
         price: 55,
         whole: 55,
+        brand: Brand.nothing,
         count: 1,
         situation: productSituation.popular,
         type: typeProduct.thirdProduct,
@@ -1265,6 +1319,547 @@ export class DataserviceService {
               filterType: 'color',
               filterName: ['magenta'],
 
+            },
+          },
+        },
+      },
+      {
+        id: '55',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/55/200/300',
+        off: 12,
+        price: 55,
+        whole: 55,
+        brand: Brand.nothing,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product F',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 54,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['magenta'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '56',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/56/200/300',
+        off: 12,
+        price: 55,
+        whole: 55,
+        brand: Brand.nothing,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product X',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 64,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '57',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/57/200/300',
+        off: 12,
+        price: 55,
+        whole: 55,
+        brand: Brand.nothing,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product J',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 28,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '58',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/58/200/300',
+        off: 12,
+        price: 55,
+        whole: 55,
+        brand: Brand.nothing,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product J',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 34,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '59',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/59/200/300',
+        off: 12,
+        price: 45,
+        whole: 45,
+        brand: Brand.brand_3,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product H',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 34,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '60',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/60/200/300',
+        off: 12,
+        price: 45,
+        whole: 45,
+        brand: Brand.brand_5,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product L',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 94,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['black'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '61',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/61/200/300',
+        off: 12,
+        price: 45,
+        whole: 45,
+        brand: Brand.brand_6,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product O',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 51,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '62',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/62/200/300',
+        off: 12,
+        price: 45,
+        whole: 45,
+        brand: Brand.brand_3,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.firstProduct,
+        description: {
+          name: 'Product F',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 31,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['orange'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '63',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/63/200/300',
+        off: 12,
+        price: 41,
+        whole: 41,
+        brand: Brand.brand_5,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product K',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 76,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['gray'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '64',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/64/200/300',
+        off: 12,
+        price: 11,
+        whole: 11,
+        brand: Brand.brand_2,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product D',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 45,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['red'],
+            },
+          },
+        },
+      },
+      {
+        id: '65',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/65/200/300',
+        off: 12,
+        price: 86,
+        whole: 86,
+        brand: Brand.brand_4,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product R',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 87,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['cyan'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '66',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/66/200/300',
+        off: 17,
+        price: 99,
+        whole: 99,
+        brand: Brand.brand_2,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product Q',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 22,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['gray'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '67',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/67/200/300',
+        off: 54,
+        price: 87,
+        whole: 87,
+        brand: Brand.brand_6,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product S',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 12,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '68',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/68/200/300',
+        off: 65,
+        price: 98,
+        whole: 98,
+        brand: Brand.brand_1,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product W',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 54,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['purple'],
+            },
+          },
+        },
+      },
+      {
+        id: '69',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/69/200/300',
+        off: 91,
+        price: 102,
+        whole: 102,
+        brand: Brand.brand_5,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product P',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 89,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['blue'],
+            },
+          },
+        },
+      },
+      {
+        id: '70',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/70/200/300',
+        off: 70,
+        price: 94,
+        whole: 94,
+        brand: Brand.brand_3,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product S',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 45,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+            },
+          },
+        },
+      },
+      {
+        id: '71',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/71/200/300',
+        off: 98,
+        price: 97,
+        whole: 97,
+        brand: Brand.brand_1,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product S',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 12,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+
+            },
+          },
+        },
+      },
+      {
+        id: '72',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/72/200/300',
+        off: 76,
+        price: 87,
+        whole: 87,
+        brand: Brand.brand_5,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.secondProduct,
+        description: {
+          name: 'Product B',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 65,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['pink'],
+            },
+          },
+        },
+      },
+      {
+        id: '73',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/73/200/300',
+        off: 76,
+        price: 87,
+        whole: 87,
+        brand: Brand.brand_3,
+        count: 1,
+        situation: productSituation.new,
+        type: typeProduct.thirdProduct,
+        description: {
+          name: 'Product P',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 65,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['pink'],
+            },
+          },
+        },
+      },
+      {
+        id: '74',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/74/200/300',
+        off: 76,
+        price: 90,
+        whole: 90,
+        brand: Brand.brand_4,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.thirdProduct,
+        description: {
+          name: 'Product P',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 87,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['brown'],
+            },
+          },
+        },
+      },
+      {
+        id: '75',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/75/200/300',
+        off: 78,
+        price: 110,
+        whole: 110,
+        brand: Brand.brand_2,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.thirdProduct,
+        description: {
+          name: 'Product U',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 93,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['pink'],
+            },
+          },
+        },
+      },
+      {
+        id: '76',
+        srcAll: ['https://images-na.ssl-images-amazon.com/images/G/01/US-hq/2024/img/Consumer_Electronics/XCM_CUTTLE_1684237_3588331_379x304_1X_en_US._SY304_CB585859022_.jpg', 'https://m.media-amazon.com/images/I/71JJ1ow-GHL._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/61nY9nYn30L._AC_SY200_.jpg', 'https://m.media-amazon.com/images/I/81BERSr+JuL._AC_SY200_.jpg'],
+        src: 'https://picsum.photos/id/76/200/300',
+        off: 21,
+        price: 32,
+        whole: 32,
+        brand: Brand.brand_3,
+        count: 1,
+        situation: productSituation.popular,
+        type: typeProduct.thirdProduct,
+        description: {
+          name: 'Product P',
+          caption: 'A popular product with color and suitability filters',
+          situation: {
+            productNumber: 86,
+            filter:
+            {
+              filterType: 'color',
+              filterName: ['yellow'],
             },
           },
         },
@@ -1429,17 +2024,17 @@ export class DataserviceService {
   slider(): Slider[] {
     return [
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9LJoo2Qm69EtIbZem4GSYZk-bYh8malIVJw&usqp=CAU",
+        src: "https://ciyashop.potenzaglobalsolutions.com/home-slider/wp-content/uploads/sites/18/2018/05/shop.jpg",
         alt: 'image 1',
         situation: sliderSituation.homepageSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4yBAmh6Tn7za9uDe0hKMvgCU1Thi6EbJpw&usqp=CAU",
+        src: "https://www.sliderrevolution.com/wp-content/uploads/2023/06/fashion-website-templates.jpg",
         alt: 'image 2',
         situation: sliderSituation.homepageSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqsMz91-0XHExxIK3KovkL4T_3Jjn-Gz-jdO5BGf2MPj2g-pp28ol1U-pvoqvxkt5K_Y&usqp=CAU",
+        src: "https://www.frankyfashion.com/cdn/shop/files/Home_Page-1600X600-Blazer_01-Darker_2048x.jpg?v=1650564400",
         alt: 'image 3',
         situation: sliderSituation.homepageSlider
       },
@@ -1449,12 +2044,12 @@ export class DataserviceService {
         situation: sliderSituation.firstSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4yBAmh6Tn7za9uDe0hKMvgCU1Thi6EbJpw&usqp=CAU",
+        src: "https://www.sliderrevolution.com/wp-content/uploads/2023/06/fashion-website-templates.jpg",
         alt: 'image 5',
         situation: sliderSituation.firstSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqsMz91-0XHExxIK3KovkL4T_3Jjn-Gz-jdO5BGf2MPj2g-pp28ol1U-pvoqvxkt5K_Y&usqp=CAU",
+        src: "https://www.frankyfashion.com/cdn/shop/files/Home_Page-1600X600-Blazer_01-Darker_2048x.jpg?v=1650564400",
         alt: 'image 6',
         situation: sliderSituation.firstSlider
       },
@@ -1464,12 +2059,12 @@ export class DataserviceService {
         situation: sliderSituation.secondSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4yBAmh6Tn7za9uDe0hKMvgCU1Thi6EbJpw&usqp=CAU",
+        src: "https://www.sliderrevolution.com/wp-content/uploads/2023/06/fashion-website-templates.jpg",
         alt: 'image 8',
         situation: sliderSituation.secondSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqsMz91-0XHExxIK3KovkL4T_3Jjn-Gz-jdO5BGf2MPj2g-pp28ol1U-pvoqvxkt5K_Y&usqp=CAU",
+        src: "https://www.frankyfashion.com/cdn/shop/files/Home_Page-1600X600-Blazer_01-Darker_2048x.jpg?v=1650564400",
         alt: 'image 9',
         situation: sliderSituation.secondSlider
       },
@@ -1479,12 +2074,12 @@ export class DataserviceService {
         situation: sliderSituation.thirdSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTn4yBAmh6Tn7za9uDe0hKMvgCU1Thi6EbJpw&usqp=CAU",
+        src: "https://www.sliderrevolution.com/wp-content/uploads/2023/06/fashion-website-templates.jpg",
         alt: 'image 11',
         situation: sliderSituation.thirdSlider
       },
       {
-        src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfqsMz91-0XHExxIK3KovkL4T_3Jjn-Gz-jdO5BGf2MPj2g-pp28ol1U-pvoqvxkt5K_Y&usqp=CAU",
+        src: "https://www.frankyfashion.com/cdn/shop/files/Home_Page-1600X600-Blazer_01-Darker_2048x.jpg?v=1650564400",
         alt: 'image 12',
         situation: sliderSituation.thirdSlider
       },
@@ -1667,6 +2262,17 @@ export class DataserviceService {
       }
     })
     return productStuCta
+  }
+
+  prodctBrand(item: Brand){
+    var product: Product[] = this.product()
+    var productStu: Product[] = []
+    product.forEach((value) => {
+      if (value.brand == item) {
+        productStu.push(value)
+      }
+    })
+    return productStu
   }
 
   // image category

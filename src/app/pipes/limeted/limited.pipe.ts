@@ -9,5 +9,4 @@ export class LimitedPipe implements PipeTransform {
     var text: string = value.trim().split(' ').slice(0, count).join(' ') + ' ...'
     return text;
   }
-
 }

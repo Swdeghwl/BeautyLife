@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Slider, sliderSituation } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
+import { SearchService } from 'src/app/services/search/search.service';
 import { SituationService } from 'src/app/services/situation/situation.service';
 
 @Component({
@@ -11,7 +12,7 @@ import { SituationService } from 'src/app/services/situation/situation.service';
 })
 export class SignComponent {
   rotuerId!: any;
-  constructor(public situationService: SituationService, public dataService: DataserviceService, public router: ActivatedRoute) { 
+  constructor(public situationService: SituationService, public dataService: DataserviceService, public router: ActivatedRoute, private searchServive: SearchService) { 
     this.rotuerId = router.snapshot.paramMap.get('id')
   }
 

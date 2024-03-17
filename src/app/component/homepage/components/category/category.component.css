@@ -28,7 +28,7 @@
 /* for tablet */
 @media screen and (max-width: 991.5px) {
     .h-size {
-        height: 120px !important;
+        height: 180px !important;
     }
 }
 

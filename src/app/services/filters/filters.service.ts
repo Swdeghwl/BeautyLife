@@ -49,6 +49,16 @@ export class FiltersService {
     }
   }
 
+  brands(){
+    return {
+      name: 'brands',
+      filterType:'color',
+      filterName: [
+        
+      ]
+    }
+  }
+
   filter(product: Product[]){
     var array: any = []
     product.forEach((value: Product) => {

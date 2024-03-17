@@ -6,13 +6,13 @@
         <div class="col-lg-1 col-0"></div>
         <div class="col-12 col-lg-10">
             <app-category [mainData]="data.category"></app-category>
-            <app-products [mainData]="data.products"></app-products>
+            <app-products [mainData]="data.products" class="d-none d-lg-block"></app-products>
             <app-newproduct [mainData]="data.newProduct"></app-newproduct>
             <app-newbrand [mainData]="data.newImg"></app-newbrand>
             <app-popularproduct [mainData]="data.popularProduct"></app-popularproduct>
             <app-popularbrand [mainData]="data.popularImg"></app-popularbrand>
-            <app-side [mainData]="data.brands"></app-side>
-            <app-news [mainData]="data.news"></app-news>
+            <app-side [mainData]="data.brands" class="d-none d-lg-block"></app-side>
+            <app-news [mainData]="data.news" class="d-none d-lg-block"></app-news>
         </div>
         <div class="col-lg-1 col-0"></div>
     </div>

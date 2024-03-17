@@ -32,6 +32,7 @@ export interface Product {
     off: number;
     price: number;
     whole: number;
+    brand: Brand;
     count: number;
     situation: productSituation;
     type: typeProduct;
@@ -129,13 +130,6 @@ export interface Filter {
     filterName: string[];
 }
 
-// SignUp
-
-export interface Singup{
-    userName: string;
-    password: string;
-}
-
 // Account
 
 export interface Account{
@@ -145,6 +139,18 @@ export interface Account{
     name: string;
     national: string;
     birthday: string;
+}
+
+// brand
+
+export enum Brand{
+    nothing,
+    brand_1,
+    brand_2,
+    brand_3,
+    brand_4,
+    brand_5,
+    brand_6,
 }
 
 // Main Cast
@@ -178,4 +184,12 @@ export interface ProductCast {
 export interface FilterCast {
     product: Product[];
     filter: Filter
+}
+
+// Category
+
+export interface Category{
+    products: Count[];
+    brands: Count[];
+    news: New[];
 }

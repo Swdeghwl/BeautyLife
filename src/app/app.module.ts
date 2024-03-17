@@ -42,6 +42,8 @@ import { SearchcastComponent } from './component/homepage/cast/searchcast/search
 import { SearchService } from './services/search/search.service';
 import { SituationcastComponent } from './component/homepage/cast/situationcast/situationcast.component';
 import { HttpClientModule } from  '@angular/common/http';
+import { NewsPipe } from './pipes/news.pipe';
+import { CategorycastComponent } from './component/homepage/cast/categorycast/categorycast.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +76,9 @@ import { HttpClientModule } from  '@angular/common/http';
     AccountcastComponent,
     AccountComponent,
     SearchcastComponent,
-    SituationcastComponent
+    SituationcastComponent,
+    NewsPipe,
+    CategorycastComponent,
   ],
   imports: [
     FormsModule,
