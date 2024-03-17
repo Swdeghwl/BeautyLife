@@ -57,7 +57,23 @@
     }
 
     .fnt-14{
-        font-size: 12px !important;
+        font-size: 10px !important;
+    }
+
+    .fnt-15 {
+        font-size: 13px !important;
+    }
+
+    .fnt-16{
+        font-size: 13px !important;
+    }
+
+    .fnt-18{
+        font-size: 14px !important;
+    }
+
+    .sign {
+        margin: 0px 5px;
     }
 }
 
@@ -82,17 +98,26 @@
     .fnt-14{
         font-size: 14px !important;
     }
+
+    .sticky {
+        position: block !important;
+    }
 }
 
 /* for mobile phone */
 @media screen and (max-width: 767px) {
     .h-col {
-        height: 120px;
+        min-height: 150px !important;
+    }
+
+    .brd-sm {
+        border: 1px solid var(--main-dark);
+        border-radius: var(--product);
     }
 
     .shape {
-        width: 20px;
-        height: 15px;
+        width: 24px;
+        height: 19px;
         border-radius: 70% 40% 30% 25%;
         transform: rotate(30deg);
         top: 3% !important;
@@ -102,20 +127,24 @@
         height: 60% !important;
     }
 
+    .h-sm-100{
+        height: 140px !important;
+    }
+
     .h-40{
         height: 40% !important;
     }
 
     .fnt-11{
-        font-size: 9px !important;
+        font-size: 8px !important;
     }
 
     .fnt-12{
-        font-size: 10px !important;
+        font-size: 9px !important;
     }
 
     .fnt-14{
-        font-size: 12px !important;
+        font-size: 11px !important;
     }
 
     .w-15 {
@@ -123,7 +152,7 @@
     }
 
     .fnt-18{
-        font-size: 14px !important;
+        font-size: 12px !important;
     }
 }
 

@@ -14,19 +14,24 @@ export class FiltercastComponent {
   routerId!: any;
   constructor(private dataService: DataserviceService, private filterService: FiltersService, private idservices: IdService , private rout: ActivatedRoute) {
   this.routerId = this.rout.snapshot.paramMap.get('id')
-  
   }
 
   data!: FilterCast;
 
-  addFilter(array: Product[], filter: Filter[]) {
+  addFilter(array: Product[], filter: Filter) {
     var data: FilterCast = {
       product: [],
-      filter: []
+      filter: {
+        name: '',
+        filterName: [],
+        filterType: '',
+      }
     }
 
     data.product = array;
     data.filter = filter
+
+    data.filter.filterName = this.filterService.filter(array)
 
     return data
   }

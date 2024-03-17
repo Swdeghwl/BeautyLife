@@ -30,6 +30,8 @@
     --fnt-15: 15px;
     --fnt-16: 16px;
     --fnt-18: 18px;
+    --fnt-19: 19px;
+    --fnt-20: 20px;
 
 }
 
@@ -163,6 +165,14 @@
 
 .fnt-18 {
     font-size: var(--fnt-18) !important;
+}
+
+.fnt-19 {
+    font-size: var(--fnt-19) !important;
+}
+
+.fnt-20 {
+    font-size: var(--fnt-20) !important;
 }
 
 /* z-index */

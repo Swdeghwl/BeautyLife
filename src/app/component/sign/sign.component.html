@@ -1,0 +1,27 @@
+<div class="body">
+    <app-firstheader></app-firstheader>
+    <app-secondheader></app-secondheader>
+
+    <div class="container-fluid h-size mt-header">
+        <div class="container">
+            <div class="row h-100">
+                <div class="col-6 h-size d-none d-lg-block">
+                    <div class="w-100 h-100 brd-rad mt-3">
+                        <div class="img w-100 h-100 brd-rad">
+                            <img [src]="img.src" [alt]="img.alt"
+                                class="brd-rad d-flex w-100 h-100 {{class}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 h-size" *ngIf="situ == true">
+                    <app-sign-up></app-sign-up>
+                </div>
+                <div class="col-12 col-lg-6 h-size" *ngIf="situ == false">
+                    <app-sign-in></app-sign-in>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-footer></app-footer>
+</div>

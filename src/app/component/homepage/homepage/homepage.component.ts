@@ -34,4 +34,12 @@ export class HomepageComponent {
     news: this.news,
   }
 
+  ngOnInit(){
+    this.dataService.getCount()
+    this.dataService.getImage()
+    this.dataService.getNews()
+    this.dataService.getProduct()
+    this.dataService.getSlider()
+  }
+
 }

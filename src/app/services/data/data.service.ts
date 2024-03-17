@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Observable } from 'rxjs';
 import { Count, Img, New, Product, Slider, countSituatoin, imgSituation, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
 
 @Injectable({
@@ -6,8 +8,11 @@ import { Count, Img, New, Product, Slider, countSituatoin, imgSituation, product
 })
 export class DataserviceService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
+  getProduct(): Observable<Product[]>{
+    return this.http.get<Product[]>('')
+  }
 
   product(): Product[] {
     return [
@@ -65,7 +70,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.popular,
+        situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product Z',
@@ -88,7 +93,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.new,
+        situation: productSituation.expensive,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product USB wireless 7654',
@@ -134,7 +139,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.new,
+        situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product U',
@@ -201,7 +206,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.popular,
+        situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product R',
@@ -293,7 +298,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.popular,
+        situation: productSituation.highQuality,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product N',
@@ -339,7 +344,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.new,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product L',
@@ -362,7 +367,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.new,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product K',
@@ -385,7 +390,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.new,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product J',
@@ -408,7 +413,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product I',
@@ -431,7 +436,7 @@ export class DataserviceService {
         price: 55,
         whole: 55,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product H',
@@ -454,7 +459,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product G',
@@ -477,7 +482,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product F',
@@ -500,7 +505,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.expensive,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product E',
@@ -523,7 +528,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.expensive,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product D',
@@ -546,7 +551,7 @@ export class DataserviceService {
         price: 55,
         whole: 55,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.expensive,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product C',
@@ -570,7 +575,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.expensive,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product B',
@@ -593,7 +598,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product A',
@@ -616,7 +621,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.highQuality,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product Z',
@@ -640,7 +645,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.highQuality,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product Y',
@@ -663,7 +668,7 @@ export class DataserviceService {
         price: 55,
         whole: 55,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.highQuality,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product X',
@@ -687,7 +692,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.cheap,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product W',
@@ -710,7 +715,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.cheap,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product V',
@@ -733,7 +738,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.cheap,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product U',
@@ -757,7 +762,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.cheap,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product T',
@@ -780,7 +785,7 @@ export class DataserviceService {
         price: 55,
         whole: 55,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.cheap,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product S',
@@ -804,7 +809,7 @@ export class DataserviceService {
         price: 70,
         whole: 70,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.new,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product R',
@@ -827,7 +832,7 @@ export class DataserviceService {
         price: 75,
         whole: 75,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.new,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product Q',
@@ -850,7 +855,7 @@ export class DataserviceService {
         price: 65,
         whole: 65,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.secondProduct,
         description: {
           name: 'Product P',
@@ -874,7 +879,7 @@ export class DataserviceService {
         price: 80,
         whole: 80,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.thirdProduct,
         description: {
           name: 'Product O',
@@ -897,7 +902,7 @@ export class DataserviceService {
         price: 55,
         whole: 55,
         count: 1,
-        situation: productSituation.nothing,
+        situation: productSituation.popular,
         type: typeProduct.firstProduct,
         description: {
           name: 'Product N',
@@ -1267,129 +1272,158 @@ export class DataserviceService {
     ]
   }
 
+  getImage(): Observable<Img[]>{
+    return this.http.get<Img[]>('')
+  }
+
   image(): Img[] {
     return [
       {
         src: "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/modern-fashion-clothing-sale-ad-design-template-f1def7d5f2c1c70005fc6ed3b08f1774_screen.jpg?ts=1609970500",
         alt: "Image 1",
         situation: imgSituation.homepageAdd,
-        routerId: "1"
+        routerId: "1",
+        target: productSituation.cheap
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmmbg2uBWvWm9KiNWX6OJfh8op2vR-J-2Qiw&usqp=CAU",
         alt: "Image 2",
         situation: imgSituation.firstAdd,
-        routerId: "2"
+        routerId: "2",
+        target: productSituation.cheap
       },
       {
         src: "https://www.sliderrevolution.com/wp-content/uploads/2023/06/fashion-website-templates.jpg",
         alt: "Image 3",
         situation: imgSituation.homepageAdd,
-        routerId: "3"
+        routerId: "3",
+        target: productSituation.highQuality
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROPsnS-tOsubd5QNFtreRoq6Qa2mJ7ndmqeA&usqp=CAU",
         alt: "Image 4",
         situation: imgSituation.firstAdd,
-        routerId: "4"
+        routerId: "4",
+        target: productSituation.highQuality
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0BVcpxYkGgVbcgyUY3qYtwfLj2t8CKRxh5w&usqp=CAU",
         alt: "Image 5",
         situation: imgSituation.homepageAdd,
-        routerId: "5"
+        routerId: "5",
+        target: productSituation.expensive
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyrSkyfXYR-Tkxc3ecXSTCeGCVdPwYmNmY0w&usqp=CAU",
         alt: "Image 6",
         situation: imgSituation.firstAdd,
-        routerId: "6"
+        routerId: "6",
+        target: productSituation.expensive
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjocaaFAcHI5reqLDJ7Ot6pdhJfyRf9siyqTS9Yv8qwud8w7tuzZAuJPASoK42u-h2dnQ&usqp=CAU",
         alt: "Image 7",
         situation: imgSituation.secondAdd,
-        routerId: "7"
+        routerId: "7",
+        target: productSituation.cheap
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZay37h5fBC7H6q2wfrVSGAAViTTECRV84agAL1Unaj_9H8ZAQTDpBCgts-CEDMpYA0s8&usqp=CAU",
         alt: "Image 8",
         situation: imgSituation.thirdAdd,
-        routerId: "8"
+        routerId: "8",
+        target: productSituation.cheap
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlNUoip0rjoN40m2O82rNdW_pn3KoOY-xe-i0I7PtHDYTXyaJkut__OCD-LCFWjPFwyxk&usqp=CAU",
         alt: "Image 9",
         situation: imgSituation.secondAdd,
-        routerId: "9"
+        routerId: "9",
+        target: productSituation.highQuality
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlbjuC0tPQHM9mUeHHTn5gz-5GU06cvY_PrWdVeUMtZomm1Idxa7JSRb_dwuSJr_hdo_g&usqp=CAU",
         alt: "Image 10",
         situation: imgSituation.thirdAdd,
-        routerId: "10"
+        routerId: "10",
+        target: productSituation.highQuality
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1AwF3ZSju7-b2cgfZex1c7i1LKLH-J7PkA5egU2HrUlBo9PjskIvjpyBn_RQqxXXHleI&usqp=CAU",
         alt: "Image 11",
         situation: imgSituation.secondAdd,
-        routerId: "11"
+        routerId: "11",
+        target: productSituation.expensive
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkvL9zWSVROYbw7LAaLLvXROQHnL5-NURMhl5UMYam_lK29vnI8WhyHW5w2Sh4eulAAks&usqp=CAU",
         alt: "Image 12",
         situation: imgSituation.thirdAdd,
-        routerId: "12"
+        routerId: "12",
+        target: productSituation.expensive
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXgIRy99fNWjA6J1TJAgR4KyTdyoF23ryN20vRD2Fg_ImM0OoJ_Tc8ru7lwHzu4ANpRyE&usqp=CAU",
         alt: "Image 13",
         situation: imgSituation.popular,
-        routerId: "13"
+        routerId: "13",
+        target: productSituation.popular
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiytsdQpLfjasanoCRRvzrp86ku4lxDeSEdxWIdYyr7OwWG2asD8g_aVMrK3Xa3WAWVhk&usqp=CAU",
         alt: "Image 14",
         situation: imgSituation.new,
-        routerId: "14"
+        routerId: "14",
+        target: productSituation.new
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCj7GyPm5rorpZPicMXkJQc6j_7VXLlvGuSfZqYneUiX_igs0KWb4-0RDJmXi1k5cTQyE&usqp=CAU",
         alt: "Image 15",
         situation: imgSituation.popular,
-        routerId: "15"
+        routerId: "15",
+        target: productSituation.popular
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BJqLDlonJRBGa23y2QP18vWwx3rxWpEa1Ckba7m4urwwZ4fmZYJRB2EM95eHosABS2M&usqp=CAU",
         alt: "Image 16",
         situation: imgSituation.new,
-        routerId: "16"
+        routerId: "16",
+        target: productSituation.new
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4y44nnIzHtGnaEMgT9ccQ0nVco9MOye2kPhlNyyAaSvfE1dJ-t24R5-Gki7SyJa4HCLE&usqp=CAU",
         alt: "Image 17",
         situation: imgSituation.popular,
-        routerId: "17"
+        routerId: "17",
+        target: productSituation.popular
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQymQBHgpS6oGgbs1ZlwJaRcoVL5LQ57Xlygl14hAjPOYnWAHekd17YBu-peVhm1lNiliw&usqp=CAU",
         alt: "Image 18",
         situation: imgSituation.new,
-        routerId: "18"
+        routerId: "18",
+        target: productSituation.new
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzQrT_SE8NsHNWlT5epmdQRuvTsQSf69a10hUlfLDluBW5LNtrnxwzR2FDycBNV8WLDDY&usqp=CAU",
         alt: "Image 19",
         situation: imgSituation.popular,
-        routerId: "19"
+        routerId: "19",
+        target: productSituation.popular
       },
       {
         src: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToD6b8J0AbF8GwMVo9WoqVO4Rj5rq293yxQ9ZyUWLhsy4t0OuQV1A-TdXL4xOyxQVAZt0&usqp=CAU",
         alt: "Image 20",
         situation: imgSituation.new,
-        routerId: "20"
+        routerId: "20",
+        target: productSituation.new
       },
     ]
+  }
+
+
+  getSlider(): Observable<Slider[]>{
+    return this.http.get<Slider[]>('')
   }
 
   slider(): Slider[] {
@@ -1454,7 +1488,26 @@ export class DataserviceService {
         alt: 'image 12',
         situation: sliderSituation.thirdSlider
       },
+      {
+        src: "https://cssslider.com/sliders/demo-31/data1/images/cat245374_1280.jpg",
+        alt: 'image 13',
+        situation: sliderSituation.sign
+      },
+      {
+        src: "https://cssslider.com/sliders/demo-31/data1/images/kitten402268_1280.jpg",
+        alt: 'image 14',
+        situation: sliderSituation.sign
+      },
+      {
+        src: "https://cssslider.com/sliders/demo-31/data1/images/cat362950_1280.jpg",
+        alt: 'image 15',
+        situation: sliderSituation.sign
+      }
     ]
+  }
+
+  getCount(): Observable<Count[]>{
+    return this.http.get<Count[]>('')
   }
 
   count(): Count[] {
@@ -1532,6 +1585,10 @@ export class DataserviceService {
         routerId: "9",
       },
     ]
+  }
+
+  getNews(): Observable<New[]>{
+    return this.http.get<New[]>('')
   }
 
   news(): New[] {

@@ -8,16 +8,18 @@ export class CartService {
 
   constructor() { }
 
-  cart: Product[] =[
-
+  cart: Product[] = [
+    
   ]
-  
+
   prices = 0
-  
+
   off = 0
 
-  allPrice(){
-    var price= 0
+  count = 0
+
+  allPrice() {
+    var price = 0
     this.cart.forEach(item => {
       price += item.whole
     })
@@ -25,13 +27,19 @@ export class CartService {
 
     // off
 
-    var offPrice= 0
+    var offPrice = 0
     var mult = 0
     this.cart.forEach(item => {
       mult = item.count * item.off
       offPrice += mult
     })
     this.off = offPrice
+
+    var number: number = 0
+    this.cart.forEach(item => {
+      number += item.count
+    })
+    this.count = number
   }
 
   // info

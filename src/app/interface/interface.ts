@@ -3,7 +3,6 @@
 export enum productSituation {
     popular,
     new,
-    nothing,
     cheap,
     expensive,
     highQuality
@@ -86,6 +85,7 @@ export interface Img {
     alt: string
     situation: imgSituation;
     routerId: string;
+    target: productSituation;
 }
 
 // Slider
@@ -96,6 +96,7 @@ export enum sliderSituation {
     firstSlider,
     secondSlider,
     thirdSlider,
+    sign,
 }
 
 export interface Slider {
@@ -119,12 +120,31 @@ export interface Count {
     situation: countSituatoin;
     routerId: string;
 }
+
 // Filter
 
 export interface Filter {
     name?: string;
     filterType: string;
     filterName: string[];
+}
+
+// SignUp
+
+export interface Singup{
+    userName: string;
+    password: string;
+}
+
+// Account
+
+export interface Account{
+    userName: string;
+    email: string;
+    address: string;
+    name: string;
+    national: string;
+    birthday: string;
 }
 
 // Main Cast
@@ -157,5 +177,5 @@ export interface ProductCast {
 
 export interface FilterCast {
     product: Product[];
-    filter: Filter[]
+    filter: Filter
 }

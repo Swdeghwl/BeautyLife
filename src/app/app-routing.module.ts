@@ -5,6 +5,10 @@ import { ProductcastComponent } from './component/homepage/cast/productcast/prod
 import { FiltercastComponent } from './component/homepage/cast/filtercast/filtercast.component';
 import { SellcastComponent } from './component/homepage/cast/sellcast/sellcast.component';
 import { CartComponent } from './component/cart/cart.component';
+import { SignComponent } from './component/sign/sign.component';
+import { AccountcastComponent } from './component/homepage/cast/accountcast/accountcast.component';
+import { SearchcastComponent } from './component/homepage/cast/searchcast/searchcast.component';
+import { SituationcastComponent } from './component/homepage/cast/situationcast/situationcast.component';
 
 
 const routes: Routes = [
@@ -51,12 +55,56 @@ const routes: Routes = [
     path: 'cart/sell/:id',
     component: SellcastComponent
   },
+  {
+    path: 'search/:id/sell/:id',
+    component: SellcastComponent
+  },
+  {
+    path: 'situation/:id/sell/:id',
+    component: SellcastComponent
+  },
+  {
+    path: 'product/:id/situation/:id/sell/:id',
+    component: SellcastComponent
+  },
 
   // cart
   {
     path: 'cart',
     component: CartComponent
-  }
+  },
+
+  // sign
+  {
+    path: 'sign/:id',
+    component: SignComponent
+  },
+  {
+    path: 'sign/:id/sign/:id',
+    component: SignComponent
+  },
+
+  // account
+  {
+    path: 'account',
+    component: AccountcastComponent
+  },
+
+  // search
+  {
+    path: 'search/:id',
+    component: SearchcastComponent,
+  },
+
+  // img
+  {
+    path: 'situation/:id',
+    component: SituationcastComponent
+  },
+  {
+    path: 'product/:id/situation/:id',
+    component: SituationcastComponent
+  },
 ];
 
 @NgModule({
@@ -64,3 +112,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

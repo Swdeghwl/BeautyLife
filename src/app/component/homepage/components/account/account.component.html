@@ -1,0 +1,60 @@
+<div class="container-fluid mt-header h-size">
+    <div class="container">
+        <div class="row h-10 mt-5 brd-btm w-80 mx-auto">
+            <div class="col-6 col-md-3 mt-4">
+                <h2 class="fnt-18 text-start">
+                    Account
+                </h2>
+            </div>
+            <div class="col-6 col-md-3 offset-md-6 offset-0 mt-3 text-end">
+                <button class="btn main-bg-warning mb-2 fnt-15 fw-medium" (click)="signOut()">Sign Out</button>
+            </div>
+        </div>
+        <div class="row h-90">
+            <div class="col-10 col-lg-4 mt-lg-5 mx-auto mt-0">
+                <div class="img brd-crcl mx-auto mt-5">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrBp4rAadRiXmk6NWl3redkvGJgWGDkBT4vA&usqp=CAU"
+                        alt="" class="brd-crcl w-100 h-100">
+                </div>
+                <div class="text-center mt-2">
+                    <p class="fnt-17 fw-bold mb-1">{{data.userName}}</p>
+                </div>
+                <div class="text-center mt-1">
+                    <p class="fnt-13 fw-medium text-secondary">{{data.email}}</p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-8 mt-lg-5 mt-0">
+                <div class="mt-5">
+                    <p class="fw-bold fnt-20 mt-5">Personal information</p>
+                    <p class="fw-medium fnt-13 text-secondary w-75">this is your personal information this is your personal
+                        information this is your personal information this is your personal information this is your
+                        personal information</p>
+                </div>
+                <div class="row mt-4 justify-content-around">
+                    <div class="col-5 col-md-3 bg-white h-col brd p-3 mt-4">
+                        <p class="d-inline-block fnt-19 fw-bold w-50 mb-1">Name</p>
+                        <fa-icon [icon]="account" class="main-text-warning ps-5"></fa-icon>
+                        <p class="fw-medium fnt-13 text-secondary text-start">{{data.name}}</p>
+                    </div>
+                    <div class="col-5 col-md-3 bg-white h-col brd p-3 mt-4">
+                        <p class="d-inline-block fnt-19 fw-bold w-50 mb-1">Address</p>
+                        <fa-icon [icon]="address" class="main-text-warning ps-xl-5 ps-4"></fa-icon>
+                        <p class="fw-medium fnt-13 text-secondary text-start">{{data.address}}</p>
+                    </div>
+                    <div class="col-5 col-md-3 bg-white h-col brd p-3 mt-4">
+                        <p class="d-inline-block fnt-19 fw-bold w-50 mb-1">National</p>
+                        <fa-icon [icon]="national" class="main-text-warning ps-5"></fa-icon>
+                        <p class="fw-medium fnt-13 text-secondary text-start">{{data.national}}</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-5 col-md-3 bg-white h-col mt-4 brd p-3 mt-5">
+                        <p class="d-inline-block fnt-19 fw-bold w-50 mb-1">Birthday</p>
+                        <fa-icon [icon]="birthday" class="main-text-warning ps-5"></fa-icon>
+                        <p class="fw-medium fnt-13 text-secondary text-start">{{data.birthday}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Route } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { limited } from 'src/app/function/function';
-import { Img, Product, ProductCast, Products, Slider, imgSituation, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
+import { Img, ProductCast, Products, Slider, imgSituation, productSituation, sliderSituation, typeProduct } from 'src/app/interface/interface';
 import { DataserviceService } from 'src/app/services/data/data.service';
 import { IdService } from 'src/app/services/id/id.service';
 
@@ -18,7 +18,7 @@ export class ProductcastComponent {
 
   data!: ProductCast;
 
-  product(slider: Slider[], category: Img[], newProduct: Products, popularProduct: Products, allProduct: Products,): ProductCast {
+  product(slider: Slider[], category: Img[], newProduct: Products, popularProduct: Products, allProduct: Products): ProductCast {
     return {
       slider: slider,
       category: category,

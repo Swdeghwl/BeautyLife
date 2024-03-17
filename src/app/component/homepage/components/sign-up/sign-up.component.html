@@ -1,0 +1,20 @@
+<div class="row margin w-75 mx-auto">
+    <div class="col-12 row h-25 text-center w-100">
+        <p class="fnt-20 fw-bold">Welcome Back!!!</p>
+        <p class="">there's many thing</p>
+    </div>
+    <form class="mt-4" [formGroup]="signContact" (ngSubmit)="sendInfo()">
+        <div class="col-12 row">
+            <input type="text" id="user" formControlName="userName" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter User Name">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="password" id="repeat" formControlName="password" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter Password">
+        </div>
+        <div class="col-12 row mt-3">
+            <p class="text-primary fnt-15 mx-auto text-center" routerLink="sign/In">you don't have account</p>
+        </div>
+        <div class="col-12 row mt-3">
+            <button type="submit" class="btn main-bg-warning w-50 mx-auto">sign up</button>
+        </div>
+    </form>
+</div>

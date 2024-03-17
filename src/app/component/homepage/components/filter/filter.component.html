@@ -24,14 +24,14 @@
                     <div class="fnt-16 fw-bold text-center">
                         filter by
                     </div>
-                    <div class="container mt-3" *ngFor="let item of alldata.filter">
+                    <div class="container mt-3">
                         <div class="fnt-14 fw-medium">
-                            {{item.filterType}}
+                            {{alldata.filter.filterType}}
                         </div>
                         <div class="row text-center">
-                            <div class="col-12 row" *ngFor="let name of item.filterName; let index = index">
+                            <div class="col-12 row" *ngFor="let name of alldata.filter.filterName; let index = index">
                                 <div class="col-3">
-                                    <input type="checkbox" (click)="arFilter(item.filterType, name)">
+                                    <input type="checkbox" (click)="arFilter(alldata.filter.filterType, name)">
                                 </div>
                                 <div class="col-9 fnt-12 pt-1">
                                     {{name}}
@@ -73,14 +73,14 @@
                     <div class="fnt-16 fw-bold text-center">
                         filter by
                     </div>
-                    <div class="container mt-3" *ngFor="let item of alldata.filter">
+                    <div class="container mt-3">
                         <div class="fnt-14 fw-medium">
-                            {{item.filterType}}
+                            {{alldata.filter.filterType}}
                         </div>
                         <div class="row text-center">
-                            <div class="col-12 row" *ngFor="let name of item.filterName; let index = index">
+                            <div class="col-12 row" *ngFor="let name of alldata.filter.filterName; let index = index">
                                 <div class="col-3">
-                                    <input type="checkbox" (click)="arFilter(item.filterType, name)">
+                                    <input type="checkbox" (click)="arFilter(alldata.filter.filterType, name)">
                                 </div>
                                 <div class="col-9 fnt-12 pt-1">
                                     {{name}}

@@ -1,5 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { faMinus, faPlus, faStar, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Observable } from 'rxjs';
 import { Product } from 'src/app/interface/interface';
 import { CartService } from 'src/app/services/cart/cart.service';
 import { SituationService } from 'src/app/services/situation/situation.service';
@@ -11,7 +13,7 @@ import { SituationService } from 'src/app/services/situation/situation.service';
 })
 export class CartComponent {
   [x: string]: any;
-  constructor(private cartService: CartService, private situationService: SituationService) { }
+  constructor(private cartService: CartService, private situationService: SituationService, private http: HttpClient) { }
 
   // icon
   star = faStar
@@ -100,5 +102,9 @@ export class CartComponent {
       number = []
       array = []
     })
+  }
+
+  postProduct(content: Product[]): Observable<Product[]>{
+    return this.http.post<Product[]>( ' ', content)
   }
 }

@@ -1,0 +1,42 @@
+.body{
+    background-color: var(--main-dark-b);
+}
+
+.h-size {
+    height: 550px;
+}
+
+.brd-rad {
+    border-radius: var(--product);
+}
+
+/* animation */
+
+.animation {
+    transform: scale(1.25, 1.25);
+    transition: all 700ms !important;
+}
+
+.image{
+    transform: scale(0.8, 0.8);
+    transition: all 700ms !important;
+}
+
+.img {
+    overflow: hidden !important;
+}
+
+/* responsive */
+
+
+/* for phone */
+@media screen and (max-width: 767px) {
+    .h-size {
+        height: 600px;
+    }
+}
+
+/* for small phone */
+@media screen and (max-width: 336px) {
+
+}

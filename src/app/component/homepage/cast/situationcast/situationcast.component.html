@@ -1,0 +1,16 @@
+<app-firstheader></app-firstheader>
+<app-secondheader></app-secondheader>
+<div class="container-fluid mt-header h-size">
+    <div class="h-col w-100 mx-auto text-center pt-3 pt-lg-0">
+        <p class="fnt-18 fw-bold mb-0" (click)="back()">Home</p>
+        <p class="fnt-12 fw-medium text-secondary mb-0" (click)="back()">come back to home</p>
+    </div>
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-12 col-lg-10 mx-auto">
+                <app-allproducts [mainData]="data"></app-allproducts>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

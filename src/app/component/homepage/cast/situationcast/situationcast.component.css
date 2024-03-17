@@ -1,0 +1,11 @@
+.h-size {
+    min-height: 400px;
+}
+
+.h-col {
+    height: 50px;
+}
+
+.bg-main {
+    background-color: var(--main-dark-a) !important;
+}

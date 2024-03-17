@@ -1,0 +1,32 @@
+<div class="row margin w-75 mx-auto">
+    <div class="col-12 row h-25 text-center w-100">
+        <p class="fnt-20 fw-bold">Welcome!!!</p>
+        <p class="">there's many thing you have to buy</p>
+    </div>
+    <form class="mt-4" [formGroup]="signContact" (ngSubmit)="sendInfo()">
+        <div class="col-12 row">
+            <input type="text" id="user" formControlName="userName" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter User Name">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="password" id="password" formControlName="password" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter Password">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="password" id="repeat" formControlName="repeatPass" required class="form-control w-75 mx-auto fnt-16" placeholder="Repeat Password">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="email" id="email" formControlName="email" class="form-control w-75 mx-auto fnt-16" placeholder="Enter Email">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="number" id="number" formControlName="number" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter Phone Number">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="text" id="address" formControlName="address" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter Address">
+        </div>
+        <div class="col-12 row mt-3">
+            <input type="number" id="national" formControlName="nationalCode" required class="form-control w-75 mx-auto fnt-16" placeholder="Enter National Code">
+        </div>
+        <div class="col-12 row mt-3">
+            <button type="submit" class="btn main-bg-warning w-50 mx-auto">sign in</button>
+        </div>
+    </form>
+</div>

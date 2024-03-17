@@ -24,7 +24,7 @@ import { ProductcastComponent } from './component/homepage/cast/productcast/prod
 import { AllproductComponent } from './component/homepage/components/allproduct/allproduct.component';
 import { FilterComponent } from './component/homepage/components/filter/filter.component';
 import { AllproductsComponent } from './component/homepage/components/allproducts/allproducts.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FiltercastComponent } from './component/homepage/cast/filtercast/filtercast.component';
 import { FiltersService } from './services/filters/filters.service';
 import { IdService } from './services/id/id.service';
@@ -33,6 +33,15 @@ import { SellComponent } from './component/homepage/components/sell/sell.compone
 import { CartComponent } from './component/cart/cart.component';
 import { CartService } from './services/cart/cart.service';
 import { SituationService } from './services/situation/situation.service';
+import { SignComponent } from './component/sign/sign.component';
+import { SignInComponent } from './component/homepage/components/sign-in/sign-in.component';
+import { SignUpComponent } from './component/homepage/components/sign-up/sign-up.component';
+import { AccountcastComponent } from './component/homepage/cast/accountcast/accountcast.component';
+import { AccountComponent } from './component/homepage/components/account/account.component';
+import { SearchcastComponent } from './component/homepage/cast/searchcast/searchcast.component';
+import { SearchService } from './services/search/search.service';
+import { SituationcastComponent } from './component/homepage/cast/situationcast/situationcast.component';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -58,21 +67,32 @@ import { SituationService } from './services/situation/situation.service';
     FiltercastComponent,
     SellcastComponent,
     SellComponent,
-    CartComponent
+    CartComponent,
+    SignComponent,
+    SignInComponent,
+    SignUpComponent,
+    AccountcastComponent,
+    AccountComponent,
+    SearchcastComponent,
+    SituationcastComponent
   ],
   imports: [
     FormsModule,
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [
     DataserviceService,
     FiltersService,
     IdService,
     CartService,
-    SituationService
+    SituationService,
+    SearchService
   ],
   bootstrap: [AppComponent]
 })

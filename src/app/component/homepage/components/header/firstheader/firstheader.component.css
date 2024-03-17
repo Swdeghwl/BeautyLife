@@ -28,7 +28,7 @@
 }
 
 .brd-start {
-    border-left: var(--bs-light) 1.28px solid;
+    border-right: var(--bs-light) 1.28px solid;
 }
 
 .bottom {
