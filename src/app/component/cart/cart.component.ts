@@ -43,14 +43,14 @@ export class CartComponent {
     this.cartService.allPrice()
   }
 
-  remove(i: number, item: Product) {
-    this.cart.splice(i, 1)
+  remove(item: Product) {
     item.count = 1
     this.len = this.cart.length
     item.whole = item.price * item.count
+    this.cartService.cart.splice(this.cartService.cart.indexOf(item), 1)
     this.cartService.allPrice()
     this.sortProduct()
-     
+    console.log(this.cartService.cart);
   }
 
   ngOnInit() {

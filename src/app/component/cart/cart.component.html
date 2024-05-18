@@ -31,7 +31,7 @@
                     <p class="fnt-14 text-secondary fw-medium d-inline-block mx-5">(type): {{data.length}}</p>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-12 brd h-col" *ngFor="let item of data; let index = index">
+                    <div class="col-12 brd h-col" *ngFor="let item of data">
                         <div class="row h-100 w-100 px-2">
                             <div class="col-5 h-100 position-relative" [routerLink]="['sell/' + item[0].id]">
                                 <img [src]="item[0].srcAll[1]" [alt]="item[0].src" class="h-sm-100 h-100 w-100">
@@ -89,14 +89,14 @@
                                             <div class="sign" (click)="minusmumber(item[0])">
                                                 <fa-icon [icon]="minus" class="fnt-14"></fa-icon>
                                             </div>
-                                            <div class="sign brd-start" (click)="remove(index ,item[0])">
+                                            <div class="sign brd-start" (click)="remove(item[0])">
                                                 <fa-icon [icon]="trash" class="fnt-14"></fa-icon>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div *ngIf="item.length > 1">
-                                    <div class="row mt-1 brd-sm mb-1 mb-md-0" *ngFor="let itm of item">
+                                    <div class="row mt-1 brd-sm mb-1 mb-md-0" *ngFor="let itm of item; let index = index">
                                         <div class="col-4 col-md-2">
                                             <p class="fnt-15 fw-bold" [routerLink]="['sell/' + itm.id]"
                                                 (click)="sendData(itm.description.situation.filter.filterName[0])">
@@ -121,7 +121,7 @@
                                                 <div class="sign" (click)="minusmumber(itm)">
                                                     <fa-icon [icon]="minus" class="fnt-14"></fa-icon>
                                                 </div>
-                                                <div class="sign brd-start" (click)="remove(index ,itm)">
+                                                <div class="sign brd-start" (click)="remove(itm)">
                                                     <fa-icon [icon]="trash" class="fnt-14"></fa-icon>
                                                 </div>
                                             </div>
